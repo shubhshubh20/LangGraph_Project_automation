@@ -1,0 +1,58 @@
+{
+  "4": {
+    "inputs": {
+      "image": "Aditya01.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "6": {
+    "inputs": {
+      "image": "Aditya01.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "7": {
+    "inputs": {
+      "frame_rate": 8,
+      "loop_count": 0,
+      "filename_prefix": "AnimateDiff",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "8": {
+    "inputs": {
+      "images_a": [
+        "4",
+        0
+      ],
+      "images_b": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "Image Batch",
+    "_meta": {
+      "title": "Image Batch"
+    }
+  }
+}

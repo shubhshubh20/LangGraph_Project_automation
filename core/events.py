@@ -5,9 +5,13 @@ def get_input_json(event: Event) -> RootState:
 
     #read RootState id, and get id.json file to read the input data
     root_state_id = event["payload"]["episode_number"]
+    server_name = event["payload"]["server_name"]
+    staging_location = event["payload"]["staging_location"]
     data = {}
     state: RootState = {
         "id": root_state_id,
+        "server_name": server_name,
+        "staging_location": staging_location,
         "characters": {},
         "jobs": {},
         "event": event

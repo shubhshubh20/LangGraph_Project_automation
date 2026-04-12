@@ -1,6 +1,7 @@
 import asyncio
 from collections import deque
 import time
+from core.state import JobState
 from graph.flow import event_queue
 from telegram import (
     Update,
@@ -62,6 +63,8 @@ async def telegram_worker(app):
             # )
 
 async def send_to_telegram(job, app):
+
+    
     keyboard = [[
         InlineKeyboardButton("✅ Approve", callback_data=f"approve_{job['job_id']}"),
         InlineKeyboardButton("❌ Reject", callback_data=f"reject_{job['job_id']}")
@@ -69,11 +72,37 @@ async def send_to_telegram(job, app):
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    await app.bot.send_message(
-        chat_id=CHAT_ID,
-        text=f"🧾 Job: {job['name']}",
-        reply_markup=reply_markup
-    )
+    try:
+        with open(job["output_path"], "rb") as f:
+            image_bytes = f.read()
+
+        isImage = job["isImage"]
+
+        if isImage:
+            await app.bot.send_photo(
+                chat_id=CHAT_ID,
+                photo=image_bytes,
+                caption=f"🖼 Job #{job['name']}",
+                reply_markup=reply_markup,
+            )
+        else:
+            await app.bot.send_video(
+                chat_id=CHAT_ID,
+                video=image_bytes,
+                caption=f"🖼 Job #{job['name']}",
+                reply_markup=reply_markup,
+            )
+    except Exception as e:
+        print("❌ Error loading image:", e)
+        # await update.message.reply_text("Failed to send image")
+
+    
+
+    # await app.bot.send_message(
+    #     chat_id=CHAT_ID,
+    #     text=f"🧾 Job: {job['name']}",
+    #     reply_markup=reply_markup
+    # )
 
 # ✅ Handle approve/reject
 async def handle_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -120,21 +149,25 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 
 # 🚀 THIS is what YOU will call from anywhere
-def send_approval_request(job_id: str, name: str):
+def send_approval_request(job_id: str, name: str, output_path: str, isImage=False):
     request_queue.append({
         "job_id": job_id,
-        "name": name
+        "name": name,
+        "output_path": output_path,
+        "isImage": isImage
     })
 
 
 
 # 🚀 Main
-def main(episode_number):
+def main(episode_number:str, server_name:str, staging_location:str):
 
     event_queue.put({
         "type": "INITIALIZE",
         "payload": {
-            "episode_number": episode_number
+            "episode_number": episode_number, 
+            "server_name": server_name,
+            "staging_location": staging_location
         }
     })
 

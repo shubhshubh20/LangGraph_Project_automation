@@ -1,0 +1,168 @@
+{
+    "id": "s01_e09",
+    "server_name": "http://localhost:8188",
+    "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09",
+    "characters": {
+        "Aditya": {
+            "outfit": "",
+            "posture": "standing",
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a happy expression",
+                    "expression": "happy",
+                    "pose_prompt": "a standing pose",
+                    "pose": "standing",
+                    "from_time": 0.0,
+                    "to_time": 1.5,
+                    "status": "approved",
+                    "prompt_id": "29b8245a-3319-4bbf-9593-77e00f0e42ef",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1.png"
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a thinking expression",
+                    "expression": "thinking",
+                    "pose_prompt": "a walking pose",
+                    "pose": "walking",
+                    "from_time": 1.5,
+                    "to_time": 3.0,
+                    "status": "approved",
+                    "prompt_id": "2217a8a5-f4c0-410b-9a74-8823119a2964",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2.png"
+                },
+                "image_3": {
+                    "index": 2,
+                    "expression_prompt": "a calm smile",
+                    "expression": "calm",
+                    "pose_prompt": "hands folded pose",
+                    "pose": "hands_folded",
+                    "from_time": 3.0,
+                    "to_time": 4.5,
+                    "status": "approved",
+                    "prompt_id": "6cf806d5-008e-40f2-a773-3faafa980ddf",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_3.png"
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "status": "approved",
+                    "prompt_id": "ef17a53c-6777-4792-a7bb-d9a43898e2c3",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1_to_image_2.mp4"
+                },
+                "image_2_to_image_3": {
+                    "from_image": "image_2",
+                    "to_image": "image_3",
+                    "status": "approved",
+                    "prompt_id": "d6565c75-0e21-40db-81c0-3911c882136b",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2_to_image_3.mp4"
+                }
+            },
+            "final_video": {
+                "status": "pending",
+                "prompt_id": "c4d87c51-2736-48be-b548-7ec9ca748ea4",
+                "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
+            }
+        }
+    },
+    "jobs": {
+        "29b8245a-3319-4bbf-9593-77e00f0e42ef": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1.png"
+        },
+        "2217a8a5-f4c0-410b-9a74-8823119a2964": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2.png"
+        },
+        "6cf806d5-008e-40f2-a773-3faafa980ddf": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_3",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_3.png"
+        },
+        "ef17a53c-6777-4792-a7bb-d9a43898e2c3": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1_to_image_2.mp4"
+        },
+        "d6565c75-0e21-40db-81c0-3911c882136b": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_2_to_image_3",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2_to_image_3.mp4"
+        },
+        "5370b7be-8767-40e6-b254-247e6985d69f": {
+            "type": "final_video",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
+        },
+        "c17229b2-159c-4d40-9821-05cc1b6a4cc5": {
+            "type": "final_video",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
+        },
+        "448400ea-6bb2-433d-8e35-b90555581988": {
+            "type": "final_video",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
+        },
+        "1a756d91-9bb9-43e4-bce5-c251c12237a8": {
+            "type": "final_video",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
+        },
+        "81a1c8d8-4f94-4ea1-bd23-f69636893e45": {
+            "type": "final_video",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
+        },
+        "c4d87c51-2736-48be-b548-7ec9ca748ea4": {
+            "type": "final_video",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
+        }
+    },
+    "event": {
+        "type": "INITIALIZE",
+        "payload": {
+            "episode_number": "s01_e09",
+            "server_name": "http://localhost:8188",
+            "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09"
+        }
+    }
+}

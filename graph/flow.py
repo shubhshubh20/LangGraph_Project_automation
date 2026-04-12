@@ -1,3 +1,4 @@
+from pathlib import Path
 from queue import Queue
 from typing import Callable, cast
 import time
@@ -123,7 +124,9 @@ def state_worker():
         log_event("Event Enqueued", event=event)
         
         state: RootState = {
-            "id": "root",
+            "id": "",
+            "server_name": "",
+            "staging_location": "",
             "characters": {},
             "jobs": {},
             "event": event
@@ -141,20 +144,27 @@ def create_next_job(state: RootState) -> RootState:
     # Example: return JobState(type="image", character="char1", image_id="img1", transition_id=None, status="pending")
     #if all the images and videos are approved including final video, then terminate the workflow
 
-    job_id = uuid.uuid4().hex
+    # job_id = uuid.uuid4().hex
     
     #if any image is pending, create an image job
+    server_name = state["server_name"]
+    staging_location = Path(state["staging_location"])
     if state["characters"]:
         for char_key, char_data in state["characters"].items():
+            character_staging_loc = staging_location / char_key
+            character_staging_loc.mkdir(parents=True, exist_ok=True)
             outfit = char_data["outfit"]
             posture = char_data["posture"]
             for img_key, img_data in char_data["images"].items():
                 if img_data["status"] == "pending" or img_data["status"] == "rejected":
                     # TODO: decide on the final output path stucture for the image
-                    img_data["output_path"] = f'{char_key}_{img_key}'
+                    output_path = f'{(character_staging_loc / img_key).__str__()}.png'
+                    img_data["output_path"] = output_path
 
                     job_id = create_image_job(
+                        server_name, 
                         char_key,
+                        img_key,
                         outfit,
                         posture,
                         img_data
@@ -165,7 +175,8 @@ def create_next_job(state: RootState) -> RootState:
                         "character": char_key,
                         "image_id": img_key,
                         "transition_id": "",
-                        "status": "in_progress"
+                        "status": "in_progress",
+                        "output_path": output_path
                     }
                     img_data["status"] = "processing"
                     img_data["prompt_id"] = job_id
@@ -184,14 +195,18 @@ def create_next_job(state: RootState) -> RootState:
     #else if any transition is pending, create a transition job condition if adjacent images are approved, then create a transition job
     if state["characters"]:
         for char_key, char_data in state["characters"].items():
+            character_staging_loc = staging_location / char_key
+            character_staging_loc.mkdir(parents=True, exist_ok=True)
             outfit = char_data["outfit"]
             posture = char_data["posture"]
             for transition_key, transition_data in char_data["transitions"].items():
                 if (transition_data["status"] == "pending" or transition_data["status"] == "rejected") and char_data["images"][transition_data["from_image"]]["status"] == "approved" and char_data["images"][transition_data["to_image"]]["status"] == "approved":
                     
-                    transition_data["output_path"] = f'{char_key}_{transition_key}'
+                    output_path = f'{(character_staging_loc / transition_key).__str__()}.mp4'
+                    transition_data["output_path"] = output_path
 
                     job_id = create_transition_video_job(
+                        server_name, 
                         char_key,
                         char_data["images"][transition_data["from_image"]],
                         char_data["images"][transition_data["to_image"]],
@@ -202,10 +217,11 @@ def create_next_job(state: RootState) -> RootState:
                         "character": char_key,
                         "image_id": "",
                         "transition_id": transition_key,
-                        "status": "in_progress"
+                        "status": "in_progress",
+                        "output_path": output_path
                     }
-                    state["characters"][char_key]["transitions"][transition_key]["status"] = "processing"
-                    state["characters"][char_key]["transitions"][transition_key]["prompt_id"] = job_id
+                    transition_data["status"] = "processing"
+                    transition_data["prompt_id"] = job_id
                     log_event("Transition Job created, updating state...")
                     # event_queue.put({
                     #     "type": "NEW_TRANSITION_JOB", 
@@ -221,15 +237,20 @@ def create_next_job(state: RootState) -> RootState:
     #else if, if final video is pending, create a final video job condtion if all the transition videos for a character are approved, then create a final video job
     if state["characters"]:
         for char_key, char_data in state["characters"].items():
+            character_staging_loc = staging_location / char_key
+            character_staging_loc.mkdir(parents=True, exist_ok=True)
             final_video = char_data["final_video"]
             if final_video and (final_video["status"] == "pending" or final_video["status"] == "rejected") and all(transition_data["status"] == "approved" for transition_data in char_data["transitions"].values()):
-                job_id = create_final_video_job(char_key, char_data["transitions"])
+                output_path = f'{(character_staging_loc / char_key).__str__()}.mp4'
+                final_video["output_path"] = output_path
+                job_id = create_final_video_job(server_name, char_key, char_data["transitions"])
                 state["jobs"][job_id] = {
                     "type": "final_video",
                     "character": char_key,
                     "image_id": "",
                     "transition_id": "",
-                    "status": "in_progress"
+                    "status": "in_progress",
+                    "output_path": output_path
                 }
                 final_video["status"] = "processing"
                 final_video["prompt_id"] = job_id

@@ -37,6 +37,7 @@ class JobState(TypedDict):
     image_id: str
     transition_id: str
     status: Literal["in_progress", "completed", "failed", "sent_for_approval"]
+    output_path : str
 
 class Event(TypedDict):
     type: str
@@ -44,6 +45,8 @@ class Event(TypedDict):
 
 class RootState(TypedDict):
     id: str
+    server_name: str
+    staging_location: str
     characters: Dict[Literal["Aditya", "Ananya", "Arjun", "Naina", "Tara"], CharacterState]
     jobs: Dict[str, JobState]   # key = prompt_id
     event: Optional[Event]

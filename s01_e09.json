@@ -2,6 +2,8 @@
     "id": "s01e08",
     "characters": {
         "Aditya": {
+            "outfit": "",
+            "posture": "standing",
             "images": {
                 "image_1": {
                     "index": 0,
@@ -20,6 +22,15 @@
                     "pose": "walking",
                     "from_time": 1.5,
                     "to_time": 3.0
+                },
+                "image_3": {
+                    "index": 2,
+                    "expression_prompt": "a calm smile",
+                    "expression": "calm",
+                    "pose_prompt": "hands folded pose",
+                    "pose": "hands_folded",
+                    "from_time": 3.0,
+                    "to_time": 4.5
                 }
             }
         }

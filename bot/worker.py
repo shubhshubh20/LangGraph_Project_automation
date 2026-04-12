@@ -1,22 +1,37 @@
+from pathlib import Path
 import threading
 import time
 import json
 from graph.flow import event_queue
 from bot.telegram_bot import send_approval_request
 from demo_logger.json_logger import log_event
+import requests
+from graph.flow import safe_replace
 
-def check_job_status(key: str, name: str):
+comfyui_output_path = Path("D:\\Comfy_UI\\ComfyUI_windows_portable_nvidia\\ComfyUI_windows_portable\\ComfyUI\\output")
+
+def check_job_status(server_name: str, key: str, name: str, output_path: str,
+                     isImage=False):
     #randomly update the job status to completed, in_progress or failed for testing
     log_event(f"Checking job status for {name} with job id {key}...")
 
 
     #TODO: replace this with actual API call to comfy ui to check job status using prompt_id and update the state accordingly
+    url = f'{server_name}/history/{key}'
+    res = requests.get(url).json()
+    status = res[key]["status"]["status_str"]
+    log_event(f"current status for {key}: {status}")
 
-    
-    import random
-    progress = random.choice(["in_progress", "completed", "failed"])
+
+    # import random
+    # progress = random.choice(["in_progress", "completed", "failed"])
     # log_event(f"Checked job status for {job['type']} of character {job['character']}, new status: {job['status']}")
-    if progress in ["completed"]:
+    if status in ["success"]:
+        if isImage:
+            saved_image_file_name = res[key]["outputs"]["10"]["images"][0]["filename"]
+        else:
+            saved_image_file_name = res[key]["outputs"]["7"]["gifs"][0]["filename"]
+        safe_replace((comfyui_output_path / saved_image_file_name).__str__(), output_path)
         # send_telegram_request(job)
         event_queue.put({
             "type": "JOB_TELEGRAM_REQUEST_EVENT", 
@@ -24,9 +39,12 @@ def check_job_status(key: str, name: str):
                 "job_id": key
             }
         })
-        send_approval_request(key, name)
-        log_event("telegram request sent")
-    if progress in ["failed"]:
+        if isImage:
+            send_approval_request(key, name, output_path, isImage=True)
+        else:
+            send_approval_request(key, name, output_path)
+        log_event(f"telegram request sent")
+    elif status in ["error"]:
         event_queue.put({
             "type": "JOB_FAILED_EVENT", 
             "payload": {
@@ -67,7 +85,7 @@ def should_terminate(state):
     return True
 
 
-def poll_job_status(shutdown_event):
+def poll_job_status(server_name, shutdown_event):
 
     log_event("Started polling thread to check job status every 10 seconds...")
 
@@ -81,7 +99,7 @@ def poll_job_status(shutdown_event):
             with open('state.json', 'r') as f:
                 data = json.load(f)
                 log_event("file found")
-        except FileNotFoundError:
+        except (FileNotFoundError, PermissionError):
             log_event("state.json not found")
             continue
 
@@ -100,7 +118,9 @@ def poll_job_status(shutdown_event):
                 if job["type"] == "image":
                     image_id = job["image_id"]
                     image_data = data["characters"][character_name]["images"][image_id]
-                    check_job_status(key, f'Image of {character_name} with expression {image_data["expression"]} and pose {image_data["pose"]}  ')
+                    check_job_status(server_name, key, 
+                                     f'Image of {character_name} with expression {image_data["expression"]} and pose {image_data["pose"]}',
+                                     job["output_path"], isImage=True)
                 elif job["type"] == "transition":
                     transition_id = job["transition_id"]
                     transition_data = data["characters"][character_name]["transitions"][transition_id]
@@ -108,7 +128,10 @@ def poll_job_status(shutdown_event):
                     to_image = transition_data["to_image"]
                     from_image_data = data["characters"][character_name]["images"][from_image]
                     to_image_data = data["characters"][character_name]["images"][to_image]
-                    check_job_status(key, f'Transition video from {from_image_data["expression"]} and pose {from_image_data["pose"]} to {to_image_data["expression"]} and pose {to_image_data["pose"]} for character {character_name}')
+                    check_job_status(server_name, key, 
+                                     f'Transition video from {from_image_data["expression"]} and pose {from_image_data["pose"]} to \
+                                     {to_image_data["expression"]} and pose {to_image_data["pose"]} for character {character_name}',
+                                     job["output_path"])
                 elif job["type"] == "final_video":
-                    check_job_status(key, f'Final video for character {character_name}')
+                    check_job_status(server_name, key, f'Final video for character {character_name}', job["output_path"])
 

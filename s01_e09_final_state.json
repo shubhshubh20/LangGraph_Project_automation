@@ -1,0 +1,118 @@
+{
+    "id": "s01_e09",
+    "characters": {
+        "Aditya": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a happy expression",
+                    "expression": "happy",
+                    "pose_prompt": "a standing pose",
+                    "pose": "standing",
+                    "from_time": 0.0,
+                    "to_time": 1.5,
+                    "status": "approved",
+                    "prompt_id": "2ffed055470045edb236051e621cf334",
+                    "output_path": null
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a thinking expression",
+                    "expression": "thinking",
+                    "pose_prompt": "a walking pose",
+                    "pose": "walking",
+                    "from_time": 1.5,
+                    "to_time": 3.0,
+                    "status": "approved",
+                    "prompt_id": "522d47c300834f58a5dd3453c42fcac6",
+                    "output_path": null
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "status": "approved",
+                    "prompt_id": "8148a36dbabd406994e8f4e70b40b3ed",
+                    "output_path": null
+                }
+            },
+            "final_video": {
+                "status": "approved",
+                "prompt_id": "a02d98b086a34ce1b3b71194e972a08b",
+                "output_path": null
+            }
+        }
+    },
+    "jobs": {
+        "58fd8060579040e7bf8d39c4e6e8dcc9": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "2ffed055470045edb236051e621cf334": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "42b0cf20f03846c89b5488015dab2807": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "6588824d8de4445ba34d10034480edb5": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "522d47c300834f58a5dd3453c42fcac6": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "5c19f2308eed41d191f39a1968771281": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "8148a36dbabd406994e8f4e70b40b3ed": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed"
+        },
+        "6ece4eaef12b4c2ca472ccd69ed2c483": {
+            "type": "final_video",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "a02d98b086a34ce1b3b71194e972a08b": {
+            "type": "final_video",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "",
+            "status": "completed"
+        }
+    },
+    "event": {
+        "type": "INITIALIZE",
+        "payload": {
+            "episode_number": "s01_e09"
+        }
+    }
+}

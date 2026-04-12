@@ -1,0 +1,349 @@
+{
+    "id": "s01_e08",
+    "characters": {
+        "Arjun": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a confident smile",
+                    "expression": "confident",
+                    "pose_prompt": "standing tall",
+                    "pose": "standing",
+                    "from_time": 0.0,
+                    "to_time": 1.5,
+                    "status": "approved",
+                    "prompt_id": "b68f89236d314c528f11276284352ba1",
+                    "output_path": null
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a serious expression",
+                    "expression": "serious",
+                    "pose_prompt": "arms crossed pose",
+                    "pose": "arms_crossed",
+                    "from_time": 1.5,
+                    "to_time": 3.0,
+                    "status": "approved",
+                    "prompt_id": "ff61fbea5b514348ab82de3b324180ee",
+                    "output_path": null
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "status": "approved",
+                    "prompt_id": "9850df56ed724faa8a5e3fba6266993a",
+                    "output_path": null
+                }
+            },
+            "final_video": {
+                "status": "approved",
+                "prompt_id": "8829b54a92d34e6b98bf150686294bf5",
+                "output_path": null
+            }
+        },
+        "Naina": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a calm smile",
+                    "expression": "calm",
+                    "pose_prompt": "hands folded pose",
+                    "pose": "hands_folded",
+                    "from_time": 0.0,
+                    "to_time": 1.5,
+                    "status": "approved",
+                    "prompt_id": "30adcbc94ce14743b6c375d7c0aebe50",
+                    "output_path": null
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a happy expression",
+                    "expression": "happy",
+                    "pose_prompt": "walking pose",
+                    "pose": "walking",
+                    "from_time": 1.5,
+                    "to_time": 3.0,
+                    "status": "approved",
+                    "prompt_id": "2749e8b9456d45eb83c51746907808b8",
+                    "output_path": null
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "status": "approved",
+                    "prompt_id": "84604a8ea4684196943341f83e542232",
+                    "output_path": null
+                }
+            },
+            "final_video": {
+                "status": "approved",
+                "prompt_id": "b09e859483c54008bd929ddbf679d234",
+                "output_path": null
+            }
+        },
+        "Tara": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a serious expression",
+                    "expression": "serious",
+                    "pose_prompt": "standing pose",
+                    "pose": "standing",
+                    "from_time": 0.0,
+                    "to_time": 1.5,
+                    "status": "approved",
+                    "prompt_id": "ba16bb1469674ebabe7a513929d7f34d",
+                    "output_path": null
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a thinking expression",
+                    "expression": "thinking",
+                    "pose_prompt": "hand on chin",
+                    "pose": "thinking_pose",
+                    "from_time": 1.5,
+                    "to_time": 3.0,
+                    "status": "approved",
+                    "prompt_id": "2900ba84b6024a1cb87eb14e050dad2f",
+                    "output_path": null
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "status": "approved",
+                    "prompt_id": "615b6918d07a4f78968385ab98b4b02b",
+                    "output_path": null
+                }
+            },
+            "final_video": {
+                "status": "approved",
+                "prompt_id": "d947d3acc43c435397f11fded422feb6",
+                "output_path": null
+            }
+        }
+    },
+    "jobs": {
+        "b68f89236d314c528f11276284352ba1": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "1cb79af0c60944f4b7ec828fc1a3ddcb": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "2d301e2e631b48208a7b45ca71802f07": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "c641ec1566bf4852a91a765da80487f6": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "ff61fbea5b514348ab82de3b324180ee": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "30adcbc94ce14743b6c375d7c0aebe50": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "2749e8b9456d45eb83c51746907808b8": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "5134ed6b518c4ea78a3dc2311a6092eb": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "2900ba84b6024a1cb87eb14e050dad2f": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "90620a59f6394f0c864d4231a6dbff0e": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "ba16bb1469674ebabe7a513929d7f34d": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "84ffe202972545a6a6eedd3b6b798065": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "062362f2b59843a1993f7e0e4833ddde": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "15beccf182364b58b2a9cf05d30579ab": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "9850df56ed724faa8a5e3fba6266993a": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed"
+        },
+        "e8d7fbba840b4eed93a05451c8b3be53": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "84604a8ea4684196943341f83e542232": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed"
+        },
+        "b40578cd76154ae38cb09a13d3c266f4": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "cc3737b7b51440fdbef7975f94902615": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "2a9fd8b7ba6a4ba08aa7fc5271ea2f0c": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "c91aa1581478417996bf3287496c4813": {
+            "type": "final_video",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "07b355c0840f49a58e2ff48ed8d0b0bc": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "8829b54a92d34e6b98bf150686294bf5": {
+            "type": "final_video",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "f821d6d45f0c4e0c9dc1e769cc92d9dd": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "failed"
+        },
+        "f25c0ac5a4b64b45a85aad4a2c3052a5": {
+            "type": "final_video",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "b09e859483c54008bd929ddbf679d234": {
+            "type": "final_video",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "",
+            "status": "completed"
+        },
+        "615b6918d07a4f78968385ab98b4b02b": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed"
+        },
+        "60b5c228f51f47809e3dbd1c9896bf5f": {
+            "type": "final_video",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "801931f55e3b4bf8b2104f4d78d08584": {
+            "type": "final_video",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "",
+            "status": "failed"
+        },
+        "d947d3acc43c435397f11fded422feb6": {
+            "type": "final_video",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "",
+            "status": "completed"
+        }
+    },
+    "event": {
+        "type": "INITIALIZE",
+        "payload": {
+            "episode_number": "s01_e08"
+        }
+    }
+}

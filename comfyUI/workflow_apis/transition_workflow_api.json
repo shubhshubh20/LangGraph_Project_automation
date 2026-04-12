@@ -1,0 +1,339 @@
+{
+  "3": {
+    "inputs": {
+      "seed": 248031981577632,
+      "steps": 33,
+      "cfg": 3.5,
+      "sampler_name": "uni_pc",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "66",
+        0
+      ],
+      "positive": [
+        "76",
+        0
+      ],
+      "negative": [
+        "76",
+        1
+      ],
+      "latent_image": [
+        "76",
+        2
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "6": {
+    "inputs": {
+      "text": "same girl, consistent character, subtle natural head movement as if talking, slight head tilt, small facial expression changes, stable hands, cinematic stillness, smooth controlled motion",
+      "clip": [
+        "38",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "text": "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走",
+      "clip": [
+        "38",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "8": {
+    "inputs": {
+      "samples": [
+        "3",
+        0
+      ],
+      "vae": [
+        "39",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "28": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "fps": 16,
+      "lossless": false,
+      "quality": 90,
+      "method": "default",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "SaveAnimatedWEBP",
+    "_meta": {
+      "title": "SaveAnimatedWEBP"
+    }
+  },
+  "37": {
+    "inputs": {
+      "unet_name": "wan2.1_fun_inp_1.3B_bf16.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "38": {
+    "inputs": {
+      "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "39": {
+    "inputs": {
+      "vae_name": "wan_2.1_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "49": {
+    "inputs": {
+      "clip_name": "clip_vision_h.safetensors"
+    },
+    "class_type": "CLIPVisionLoader",
+    "_meta": {
+      "title": "Load CLIP Vision"
+    }
+  },
+  "51": {
+    "inputs": {
+      "crop": "none",
+      "clip_vision": [
+        "49",
+        0
+      ],
+      "image": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "CLIPVisionEncode",
+    "_meta": {
+      "title": "CLIP Vision Encode"
+    }
+  },
+  "52": {
+    "inputs": {
+      "image": "4bf3960dee793bc2e2698f3a40fd82af975f59d62056a9444202a67dcc33d860.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Start_image"
+    }
+  },
+  "65": {
+    "inputs": {
+      "double_layers": "9,10",
+      "single_layers": "9,10",
+      "scale": 3,
+      "start_percent": 0.01,
+      "end_percent": 0.5,
+      "rescaling_scale": 0,
+      "model": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "SkipLayerGuidanceDiT",
+    "_meta": {
+      "title": "SkipLayerGuidanceDiT"
+    }
+  },
+  "66": {
+    "inputs": {
+      "model": [
+        "77",
+        0
+      ]
+    },
+    "class_type": "CFGZeroStar",
+    "_meta": {
+      "title": "CFGZeroStar"
+    }
+  },
+  "67": {
+    "inputs": {
+      "shift": 5.000000000000001,
+      "model": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3",
+    "_meta": {
+      "title": "ModelSamplingSD3"
+    }
+  },
+  "68": {
+    "inputs": {
+      "self_structural": 1,
+      "self_temporal": 1,
+      "cross_structural": 0.43,
+      "cross_temporal": 0.5,
+      "model": [
+        "67",
+        0
+      ]
+    },
+    "class_type": "UNetTemporalAttentionMultiply",
+    "_meta": {
+      "title": "UNetTemporalAttentionMultiply"
+    }
+  },
+  "72": {
+    "inputs": {
+      "image": "a6aaa6d36792ffcb13f072823f60d4e2a158cd491178e201852c880be097537e.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "End_image"
+    }
+  },
+  "76": {
+    "inputs": {
+      "width": 480,
+      "height": 768,
+      "length": 33,
+      "batch_size": 1,
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "vae": [
+        "39",
+        0
+      ],
+      "clip_vision_output": [
+        "51",
+        0
+      ],
+      "start_image": [
+        "82",
+        0
+      ],
+      "end_image": [
+        "83",
+        0
+      ]
+    },
+    "class_type": "WanFunInpaintToVideo",
+    "_meta": {
+      "title": "WanFunInpaintToVideo"
+    }
+  },
+  "77": {
+    "inputs": {
+      "weight": 0.6,
+      "weight_faceidv2": 1,
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0,
+      "end_at": 1,
+      "embeds_scaling": "V only",
+      "model": [
+        "68",
+        0
+      ],
+      "ipadapter": [
+        "79",
+        0
+      ],
+      "image": [
+        "52",
+        0
+      ],
+      "clip_vision": [
+        "49",
+        0
+      ],
+      "insightface": [
+        "80",
+        0
+      ]
+    },
+    "class_type": "IPAdapterFaceID",
+    "_meta": {
+      "title": "IPAdapter FaceID"
+    }
+  },
+  "79": {
+    "inputs": {
+      "ipadapter_file": "ip-adapter-faceid-plusv2_sd15.bin"
+    },
+    "class_type": "IPAdapterModelLoader",
+    "_meta": {
+      "title": "IPAdapter Model Loader"
+    }
+  },
+  "80": {
+    "inputs": {
+      "provider": "CPU"
+    },
+    "class_type": "IPAdapterInsightFaceLoader",
+    "_meta": {
+      "title": "IPAdapter InsightFace Loader"
+    }
+  },
+  "82": {
+    "inputs": {
+      "size": 2,
+      "images": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "Image Gaussian Blur",
+    "_meta": {
+      "title": "Image Gaussian Blur"
+    }
+  },
+  "83": {
+    "inputs": {
+      "size": 2,
+      "images": [
+        "72",
+        0
+      ]
+    },
+    "class_type": "Image Gaussian Blur",
+    "_meta": {
+      "title": "Image Gaussian Blur"
+    }
+  }
+}

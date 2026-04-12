@@ -1,0 +1,71 @@
+{
+    "id": "s01e08",
+    "characters": {
+        "Arjun": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a confident smile",
+                    "expression": "confident",
+                    "pose_prompt": "standing tall",
+                    "pose": "standing",
+                    "from_time": 0.0,
+                    "to_time": 1.5
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a serious expression",
+                    "expression": "serious",
+                    "pose_prompt": "arms crossed pose",
+                    "pose": "arms_crossed",
+                    "from_time": 1.5,
+                    "to_time": 3.0
+                }
+            }
+        },
+        "Naina": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a calm smile",
+                    "expression": "calm",
+                    "pose_prompt": "hands folded pose",
+                    "pose": "hands_folded",
+                    "from_time": 0.0,
+                    "to_time": 1.5
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a happy expression",
+                    "expression": "happy",
+                    "pose_prompt": "walking pose",
+                    "pose": "walking",
+                    "from_time": 1.5,
+                    "to_time": 3.0
+                }
+            }
+        },
+        "Tara": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a serious expression",
+                    "expression": "serious",
+                    "pose_prompt": "standing pose",
+                    "pose": "standing",
+                    "from_time": 0.0,
+                    "to_time": 1.5
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a thinking expression",
+                    "expression": "thinking",
+                    "pose_prompt": "hand on chin",
+                    "pose": "thinking_pose",
+                    "from_time": 1.5,
+                    "to_time": 3.0
+                }
+            }
+        }
+    }
+}

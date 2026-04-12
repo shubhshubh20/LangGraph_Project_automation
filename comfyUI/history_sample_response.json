@@ -1,0 +1,87 @@
+{
+    "1d300bfe-1d83-446b-88aa-477b01a2cec9": {
+        "prompt": [
+            3,
+            "1d300bfe-1d83-446b-88aa-477b01a2cec9",
+            {
+                "1": {
+                    "inputs": {
+                        "image": "fc49334b-6138-4884-a02b-782483459b6f.png"
+                    },
+                    "class_type": "LoadImage",
+                    "_meta": {
+                        "title": "Load Image"
+                    }
+                },
+                "2": {
+                    "inputs": {
+                        "preprocessor": "depth",
+                        "sd_version": "sdxl",
+                        "resolution": 512,
+                        "preprocessor_override": "None",
+                        "image": [
+                            "1",
+                            0
+                        ]
+                    },
+                    "class_type": "AV_ControlNetPreprocessor",
+                    "_meta": {
+                        "title": "[Deprecated] ControlNet Preprocessor"
+                    }
+                },
+                "3": {
+                    "inputs": {
+                        "images": [
+                            "2",
+                            0
+                        ]
+                    },
+                    "class_type": "PreviewImage",
+                    "_meta": {
+                        "title": "Preview Image"
+                    }
+                }
+            },
+            {
+                "create_time": 1775898929644
+            },
+            [
+                "3"
+            ]
+        ],
+        "outputs": {},
+        "status": {
+            "status_str": "success",
+            "completed": true,
+            "messages": [
+                [
+                    "execution_start",
+                    {
+                        "prompt_id": "1d300bfe-1d83-446b-88aa-477b01a2cec9",
+                        "timestamp": 1775898929646
+                    }
+                ],
+                [
+                    "execution_cached",
+                    {
+                        "nodes": [
+                            "1",
+                            "2",
+                            "3"
+                        ],
+                        "prompt_id": "1d300bfe-1d83-446b-88aa-477b01a2cec9",
+                        "timestamp": 1775898929774
+                    }
+                ],
+                [
+                    "execution_success",
+                    {
+                        "prompt_id": "1d300bfe-1d83-446b-88aa-477b01a2cec9",
+                        "timestamp": 1775898929774
+                    }
+                ]
+            ]
+        },
+        "meta": {}
+    }
+}

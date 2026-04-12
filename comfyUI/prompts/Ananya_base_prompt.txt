@@ -1,0 +1,7 @@
+Optional: 
+
+Create a simple one-sentence prompt. Describe the image style and clothing, especially elements not fully visible in your input image.
+
+If you are using a stylized character use something like: 
+
+Make an image in this style of [an anime illustration of an elf]. 

@@ -1,0 +1,76 @@
+{
+  "7": {
+    "inputs": {
+      "inputcount": 2,
+      "Update inputs": null,
+      "image_1": [
+        "8",
+        0
+      ],
+      "image_2": [
+        "9",
+        0
+      ]
+    },
+    "class_type": "ImageBatchMulti",
+    "_meta": {
+      "title": "Image Batch Multi"
+    }
+  },
+  "8": {
+    "inputs": {
+      "image": "naina_transition_1.webp"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "9": {
+    "inputs": {
+      "image": "naina_transition_2.webp"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "11": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "width": 1080,
+      "height": 1920,
+      "crop": "disabled",
+      "image": [
+        "7",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Upscale Image"
+    }
+  },
+  "13": {
+    "inputs": {
+      "frame_rate": 16,
+      "loop_count": 0,
+      "filename_prefix": "AnimateDiff",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  }
+}

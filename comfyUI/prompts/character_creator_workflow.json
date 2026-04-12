@@ -1,0 +1,368 @@
+{
+  "213": {
+    "inputs": {
+      "image": "37d98b04-5365-4648-8cea-0b3bff3197b8.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "360": {
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "362": {
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "cpu"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "368": {
+    "inputs": {
+      "filename_prefix": [
+        "913",
+        0
+      ],
+      "images": [
+        "369",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "369": {
+    "inputs": {
+      "samples": [
+        "376",
+        0
+      ],
+      "vae": [
+        "360",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "370": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "374": {
+    "inputs": {
+      "image": [
+        "213",
+        0
+      ]
+    },
+    "class_type": "FluxKontextImageScale",
+    "_meta": {
+      "title": "FluxKontextImageScale"
+    }
+  },
+  "376": {
+    "inputs": {
+      "seed": 1034973049061633,
+      "steps": [
+        "844",
+        0
+      ],
+      "cfg": [
+        "850",
+        0
+      ],
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 0.84,
+      "model": [
+        "547",
+        0
+      ],
+      "positive": [
+        "1351",
+        0
+      ],
+      "negative": [
+        "1352",
+        0
+      ],
+      "latent_image": [
+        "370",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "515": {
+    "inputs": {
+      "string": "Young Indian woman, early 20s, confident and dominant personality, sharp expressive eyes, slightly raised eyebrows, neat hair, modern urban look, looks decisive and in control\n\nRules: \nNever loose hair \nNever playful expression \nAlways looks like she’s leading\n",
+      "strip_newlines": true
+    },
+    "class_type": "StringConstantMultiline",
+    "_meta": {
+      "title": "PROMPT (One Sentence: Describe style, character, clothes...)"
+    }
+  },
+  "546": {
+    "inputs": {
+      "gguf_name": "gguf/qwen-image-edit-2511-Q5_1.gguf"
+    },
+    "class_type": "LoaderGGUF",
+    "_meta": {
+      "title": "GGUF Loader"
+    }
+  },
+  "547": {
+    "inputs": {
+      "lora_name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+      "strength_model": 1,
+      "model": [
+        "1114",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "588": {
+    "inputs": {
+      "value": "Ananya"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "NAME"
+    }
+  },
+  "592": {
+    "inputs": {
+      "string": "A full-body anime illustration of the woman from the reference image, sitting casually on a wooden stool. \n\nPose: She holds a steaming cutting chai tapri glass from the reference image in one hand. She is pointing with her other hand towards another person who is not in the frame.\n\nExpression: She has a happy, attentive expression and a slight smile, as if listening intently. \nBackground: The background is a flat, solid green screen (hex code #00FF00). \nCamera: standard, eye-level camera angle to capture her from head to toe.\nLighting: soft natural lighting, evenly lit, no dramatic shadows.",
+      "strip_newlines": true
+    },
+    "class_type": "StringConstantMultiline",
+    "_meta": {
+      "title": "String Constant Multiline"
+    }
+  },
+  "593": {
+    "inputs": {
+      "inputcount": 2,
+      "delimiter": " ",
+      "return_list": false,
+      "Update inputs": null,
+      "string_1": [
+        "592",
+        0
+      ],
+      "string_2": [
+        "515",
+        0
+      ]
+    },
+    "class_type": "JoinStringMulti",
+    "_meta": {
+      "title": "Join String Multi"
+    }
+  },
+  "844": {
+    "inputs": {
+      "value": 4
+    },
+    "class_type": "PrimitiveInt",
+    "_meta": {
+      "title": "STEPS"
+    }
+  },
+  "850": {
+    "inputs": {
+      "value": 1
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "CFG"
+    }
+  },
+  "913": {
+    "inputs": {
+      "inputcount": 2,
+      "delimiter": "/",
+      "return_list": false,
+      "Update inputs": null,
+      "string_1": [
+        "588",
+        0
+      ],
+      "string_2": [
+        "588",
+        0
+      ]
+    },
+    "class_type": "JoinStringMulti",
+    "_meta": {
+      "title": "Join String Multi"
+    }
+  },
+  "997": {
+    "inputs": {
+      "filename_prefix": [
+        "998",
+        0
+      ],
+      "images": [
+        "213",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "998": {
+    "inputs": {
+      "inputcount": 2,
+      "delimiter": "/",
+      "return_list": false,
+      "Update inputs": null,
+      "string_1": [
+        "588",
+        0
+      ],
+      "string_2": [
+        "588",
+        0
+      ]
+    },
+    "class_type": "JoinStringMulti",
+    "_meta": {
+      "title": "Join String Multi"
+    }
+  },
+  "1114": {
+    "inputs": {
+      "strength": 1,
+      "model": [
+        "1115",
+        0
+      ]
+    },
+    "class_type": "CFGNorm",
+    "_meta": {
+      "title": "CFGNorm"
+    }
+  },
+  "1115": {
+    "inputs": {
+      "shift": 3,
+      "model": [
+        "546",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingAuraFlow",
+    "_meta": {
+      "title": "ModelSamplingAuraFlow"
+    }
+  },
+  "1201": {
+    "inputs": {
+      "prompt": [
+        "592",
+        0
+      ],
+      "clip": [
+        "362",
+        0
+      ],
+      "vae": [
+        "360",
+        0
+      ],
+      "image1": [
+        "374",
+        0
+      ],
+      "image2": [
+        "1450",
+        0
+      ]
+    },
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "_meta": {
+      "title": "TextEncodeQwenImageEditPlus"
+    }
+  },
+  "1351": {
+    "inputs": {
+      "reference_latents_method": "index_timestep_zero",
+      "conditioning": [
+        "1201",
+        0
+      ]
+    },
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "_meta": {
+      "title": "Edit Model Reference Method"
+    }
+  },
+  "1352": {
+    "inputs": {
+      "conditioning": [
+        "1201",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "1446": {
+    "inputs": {
+      "image": "download.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "1450": {
+    "inputs": {
+      "image": [
+        "1446",
+        0
+      ]
+    },
+    "class_type": "FluxKontextImageScale",
+    "_meta": {
+      "title": "FluxKontextImageScale"
+    }
+  }
+}

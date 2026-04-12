@@ -1,0 +1,27 @@
+{
+    "id": "s01e08",
+    "characters": {
+        "Aditya": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a happy expression",
+                    "expression": "happy",
+                    "pose_prompt": "a standing pose",
+                    "pose": "standing",
+                    "from_time": 0.0,
+                    "to_time": 1.5
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a thinking expression",
+                    "expression": "thinking",
+                    "pose_prompt": "a walking pose",
+                    "pose": "walking",
+                    "from_time": 1.5,
+                    "to_time": 3.0
+                }
+            }
+        }
+    }
+}

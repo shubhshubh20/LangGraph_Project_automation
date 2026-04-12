@@ -1,0 +1,20 @@
+1. when telegram request is sent, no need to check for job status, 
+this is working for mosot of the scenarios still sometimes, it is not working, becuase 3 jobs were created 
+at a time for one case, need to check this why this happened.
+
+tested again, now working fine, only final video got created three times, need to check this. multiple instances not allowed 
+at all
+
+2. if there are not more jobs required to create stop the execution (this need to be worked on)
+
+3. check reject scenarios   --->  rejected are not picking up, when I reject a job, state is updated
+but new jobs are not getting created, (working as expeted now)
+
+4. only checks top job not other jobs: (now working)
+
+
+
+system is breaking for following scenario:
+1. wait for all 4 images for approval
+2. reject 1 , approve 1, wait, then reject 1 approve 1, transition should start along with images
+3. in this case many requests are getting created, need to check this scenario

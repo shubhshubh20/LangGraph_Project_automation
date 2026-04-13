@@ -9,8 +9,7 @@
                     "expression": "confident",
                     "pose_prompt": "standing tall",
                     "pose": "standing",
-                    "from_time": 0.0,
-                    "to_time": 1.5
+                    "time": 0.0
                 },
                 "image_2": {
                     "index": 1,
@@ -18,8 +17,7 @@
                     "expression": "serious",
                     "pose_prompt": "arms crossed pose",
                     "pose": "arms_crossed",
-                    "from_time": 1.5,
-                    "to_time": 3.0
+                    "time": 3.0
                 }
             }
         },
@@ -31,8 +29,7 @@
                     "expression": "calm",
                     "pose_prompt": "hands folded pose",
                     "pose": "hands_folded",
-                    "from_time": 0.0,
-                    "to_time": 1.5
+                    "time": 1.5
                 },
                 "image_2": {
                     "index": 1,
@@ -40,8 +37,7 @@
                     "expression": "happy",
                     "pose_prompt": "walking pose",
                     "pose": "walking",
-                    "from_time": 1.5,
-                    "to_time": 3.0
+                    "time": 3.0
                 }
             }
         },
@@ -53,8 +49,7 @@
                     "expression": "serious",
                     "pose_prompt": "standing pose",
                     "pose": "standing",
-                    "from_time": 0.0,
-                    "to_time": 1.5
+                    "time": 1.5
                 },
                 "image_2": {
                     "index": 1,
@@ -62,8 +57,7 @@
                     "expression": "thinking",
                     "pose_prompt": "hand on chin",
                     "pose": "thinking_pose",
-                    "from_time": 1.5,
-                    "to_time": 3.0
+                    "time": 3.0
                 }
             }
         }

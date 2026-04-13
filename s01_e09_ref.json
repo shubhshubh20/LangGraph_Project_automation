@@ -1,0 +1,69 @@
+{
+    "id": "s01_e09",
+    "characters": {
+        "Arjun": {
+            "outfit": "outfit_2",
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a depressed, existential expression, staring blankly, not speaking",
+                    "expression": "sad_sipping",
+                    "pose_prompt": "standing, looking off-camera into the distance, taking a slow sip from a glass tea cup held in his right hand, left hand resting",
+                    "pose": "standing_sipping_away",
+                    "camera_angle": "left profile view",
+                    "time": 0.0
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a depressed, existential, speaking expression",
+                    "expression": "sad_speaking",
+                    "pose_prompt": "standing, gazing off-camera into the distance, lowering the glass tea cup from his mouth, holding it in his right hand near his chest, left hand resting",
+                    "pose": "standing_lowering_cup",
+                    "camera_angle": "left profile view",
+                    "time": 2.0
+                },
+                "image_3": {
+                    "index": 2,
+                    "expression_prompt": "a deep, heavy-hearted thinking expression, not speaking",
+                    "expression": "heavy_thinking",
+                    "pose_prompt": "standing, staring blankly ahead, holding the glass tea cup steady in his right hand near his waist",
+                    "pose": "standing_looking_street",
+                    "camera_angle": "left profile view",
+                    "time": 5.5
+                },
+                "image_4": {
+                    "index": 3,
+                    "expression_prompt": "a listening expression, turning head",
+                    "expression": "listening_turn",
+                    "pose_prompt": "standing, slowly turning head to look forward, holding a glass tea cup in his right hand near his chest",
+                    "pose": "standing_turning_head",
+                    "camera_angle": "left 3/4 view",
+                    "time": 9.0
+                },
+                "image_5": {
+                    "index": 4,
+                    "expression_prompt": "a neutral, silent listening expression",
+                    "expression": "neutral_listening",
+                    "pose_prompt": "standing, making eye contact with someone off-screen, taking a slow sip from the glass tea cup in his right hand",
+                    "pose": "standing_sipping_tea",
+                    "camera_angle": "left 3/4 view",
+                    "time": 12.5
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "prompt": "same man, consistent character, slowly lowering the glass tea cup from his mouth to his chest, opening mouth to speak with a sad expression, subtle facial movements, stable hands, cinematic stillness, smooth controlled motion"
+                },
+                "image_2_to_image_3": {
+                    "prompt": "same man, consistent character, closing mouth, slowly lowering the glass tea cup down near his waist, shifting into a heavy thinking expression, stable hands, cinematic stillness, smooth controlled motion"
+                },
+                "image_3_to_image_4": {
+                    "prompt": "same man, consistent character, slowly turning his head from a profile view to face forward, subtly raising the glass tea cup slightly towards his chest, stable hands, cinematic stillness, smooth controlled motion"
+                },
+                "image_4_to_image_5": {
+                    "prompt": "same man, consistent character, bringing the glass tea cup up to his mouth to take a slow sip, subtle natural head movement, stable hands, cinematic stillness, smooth controlled motion"
+                }
+            }
+        }
+    }
+}

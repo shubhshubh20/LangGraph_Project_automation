@@ -1,0 +1,1877 @@
+{
+    "id": "s01_e09",
+    "server_name": "http://localhost:8188",
+    "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09",
+    "characters": {
+        "Arjun": {
+            "outfit": "outfit_2",
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a depressed, existential expression, staring blankly, not speaking",
+                    "expression": "sad_sipping",
+                    "pose_prompt": "standing, weight shifted to one leg, looking off-camera into the distance, taking a slow sip from a glass tea cup held in his right hand, left hand resting",
+                    "pose": "standing_sipping_away",
+                    "time": 0.0,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "a08ba442-c123-464d-8b13-48301d88ec01",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_1.png"
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a depressed, existential, speaking expression",
+                    "expression": "sad_speaking",
+                    "pose_prompt": "standing, hips tilted slightly, gazing off-camera into the distance, lowering the glass tea cup from his mouth, holding it in his right hand near his chest, left hand resting",
+                    "pose": "standing_lowering_cup",
+                    "time": 2.0,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "0314a4c4-bf65-45f3-ac9a-684b80438b50",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_2.png"
+                },
+                "image_3": {
+                    "index": 2,
+                    "expression_prompt": "a deep, heavy-hearted thinking expression, not speaking",
+                    "expression": "heavy_thinking",
+                    "pose_prompt": "standing, feet planted firmly, staring blankly ahead, holding the glass tea cup steady in his right hand near his waist",
+                    "pose": "standing_looking_street",
+                    "time": 5.5,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "66403d81-0677-48ab-868c-f67ba092e52d",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_3.png"
+                },
+                "image_4": {
+                    "index": 3,
+                    "expression_prompt": "a listening expression, turning head",
+                    "expression": "listening_turn",
+                    "pose_prompt": "standing, pivoting slightly on his front foot, slowly turning head to look forward, holding a glass tea cup in his right hand near his chest",
+                    "pose": "standing_turning_head",
+                    "time": 9.0,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "492e076b-bb56-4074-9ceb-24ca000b2ee4",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_4.png"
+                },
+                "image_5": {
+                    "index": 4,
+                    "expression_prompt": "a neutral, silent listening expression",
+                    "expression": "neutral_listening",
+                    "pose_prompt": "standing, left knee slightly bent, making eye contact with someone off-screen, taking a slow sip from the glass tea cup in his right hand",
+                    "pose": "standing_sipping_tea",
+                    "time": 12.5,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "9ea6e163-2c49-4083-ae08-317a7ba98c38",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_5.png"
+                },
+                "image_6": {
+                    "index": 5,
+                    "expression_prompt": "a serious, heavy speaking expression with a faint half-smile",
+                    "expression": "serious_speaking",
+                    "pose_prompt": "standing, shifting weight forward slightly, looking forward, gesturing subtly with his left hand, holding the glass tea cup in his right hand",
+                    "pose": "standing_gesturing",
+                    "time": 15.0,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "d511fcf4-a20f-41b6-afb5-88e49dace732",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_6.png"
+                },
+                "image_7": {
+                    "index": 6,
+                    "expression_prompt": "a tired, melancholic expression, looking down",
+                    "expression": "melancholic",
+                    "pose_prompt": "standing, posture slightly slumped with weight on one leg, lowering head slightly, looking down at the ground, holding the glass tea cup with both hands low near his waist",
+                    "pose": "standing_looking_down_both_hands",
+                    "time": 18.5,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "91ee03c5-a477-4d66-b7a9-eb9eeb1daed5",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_7.png"
+                },
+                "image_8": {
+                    "index": 7,
+                    "expression_prompt": "an exhausted, relatable sighing expression, not speaking",
+                    "expression": "exhausted_sigh",
+                    "pose_prompt": "standing, posture slightly slumped with feet parallel, holding the glass tea cup close to his chest with both hands",
+                    "pose": "standing_slumped_both_hands",
+                    "time": 22.0,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "f51d9301-561b-4c6a-9309-507598967d38",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_8.png"
+                },
+                "image_9": {
+                    "index": 8,
+                    "expression_prompt": "a distant, lost in thought expression",
+                    "expression": "lost_in_thought",
+                    "pose_prompt": "standing, shifting weight to his left leg, staring off into the distance, holding the glass tea cup casually by his side in his left hand, right hand resting",
+                    "pose": "standing_staring_left_hand",
+                    "time": 26.5,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "c94330ad-8f47-4fcd-bd3f-0b4e822412e4",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_9.png"
+                },
+                "image_10": {
+                    "index": 9,
+                    "expression_prompt": "a startled, slightly annoyed reaction expression",
+                    "expression": "startled_annoyed",
+                    "pose_prompt": "standing, taking a subtle half-step back, snapping head forward as if reacting to a loud noise, holding the glass tea cup steady in his left hand",
+                    "pose": "standing_reacting_left_hand",
+                    "time": 30.5,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "f12e5f32-684d-4e18-a566-d3658a37bdb6",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_10.png"
+                },
+                "image_11": {
+                    "index": 10,
+                    "expression_prompt": "a faint, amused smile, shaking head slightly",
+                    "expression": "amused_smile",
+                    "pose_prompt": "standing, relaxing his stance with left knee slightly bent, looking forward, bringing the glass tea cup up for another sip with his left hand",
+                    "pose": "standing_bringing_cup_up_left_hand",
+                    "time": 34.0,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "e89b5e71-5716-4d7b-9859-20680fd92726",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_11.png"
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "prompt": "same man, consistent character, slowly lowering the glass tea cup from his mouth to his chest, opening mouth to speak with a sad expression, subtle facial movements, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "507da3d1-5b92-4d4f-88c1-7fbe836cff15",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_1_to_image_2.webp"
+                },
+                "image_2_to_image_3": {
+                    "from_image": "image_2",
+                    "to_image": "image_3",
+                    "prompt": "same man, consistent character, closing mouth, slowly lowering the glass tea cup down near his waist, shifting into a heavy thinking expression, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "4a92a7f2-dbcd-4f7e-ab47-d4ef5c0ab4f1",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_2_to_image_3.webp"
+                },
+                "image_3_to_image_4": {
+                    "from_image": "image_3",
+                    "to_image": "image_4",
+                    "prompt": "same man, consistent character, slowly turning his head from a profile view to face forward, subtly raising the glass tea cup slightly towards his chest, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "e9197d49-c741-4ce0-a8f2-13c453ab78c4",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_3_to_image_4.webp"
+                },
+                "image_4_to_image_5": {
+                    "from_image": "image_4",
+                    "to_image": "image_5",
+                    "prompt": "same man, consistent character, bringing the glass tea cup up to his mouth to take a slow sip, subtle natural head movement, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "95403a3d-2557-43c7-b76c-0e3befda2197",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_4_to_image_5.webp"
+                },
+                "image_5_to_image_6": {
+                    "from_image": "image_5",
+                    "to_image": "image_6",
+                    "prompt": "same man, consistent character, lowering the glass tea cup from his mouth, opening mouth to speak, making subtle conversational gestures with his free left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "d6aebea1-28ef-461c-bbbb-0d586b7b10e0",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_5_to_image_6.webp"
+                },
+                "image_6_to_image_7": {
+                    "from_image": "image_6",
+                    "to_image": "image_7",
+                    "prompt": "same man, consistent character, stopping speaking, slowly lowering his head to look down, bringing his left hand over to hold the glass tea cup with both hands near his waist, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "7f1299b1-6fd8-4d2b-ae0e-0f0071ee2004",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_6_to_image_7.webp"
+                },
+                "image_7_to_image_8": {
+                    "from_image": "image_7",
+                    "to_image": "image_8",
+                    "prompt": "same man, consistent character, slumping shoulders slightly, taking a deep breath to sigh, raising the glass tea cup up close to his chest while holding it with both hands, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "df0cee51-b724-4bea-b1d9-662f346a27ee",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_7_to_image_8.webp"
+                },
+                "image_8_to_image_9": {
+                    "from_image": "image_8",
+                    "to_image": "image_9",
+                    "prompt": "same man, consistent character, releasing his right hand to rest, lowering the glass tea cup to his side in his left hand, turning his head slowly to stare out into the distance, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "e928c91a-1ad1-4459-8749-e6eb74dbdc25",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_8_to_image_9.webp"
+                },
+                "image_9_to_image_10": {
+                    "from_image": "image_9",
+                    "to_image": "image_10",
+                    "prompt": "same man, consistent character, suddenly snapping his head forward to react to a sound, eyes widening slightly, keeping the glass tea cup steady in his left hand, stable hands, cinematic stillness, fast but controlled motion",
+                    "status": "approved",
+                    "prompt_id": "66cbb7c2-2727-44f8-a33e-4a9ece853526",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_9_to_image_10.webp"
+                },
+                "image_10_to_image_11": {
+                    "from_image": "image_10",
+                    "to_image": "image_11",
+                    "prompt": "same man, consistent character, relaxing his expression into a faint smile, shaking his head slightly in amusement, bringing the glass tea cup up to take a sip with his left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "ec243d8e-9c33-4f51-a32f-ff2a9a29aaf4",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_10_to_image_11.webp"
+                }
+            },
+            "final_video": {
+                "status": "processing",
+                "prompt_id": "eccf1b70-a185-4644-9647-792d4a80ba3a",
+                "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\Arjun.mp4"
+            }
+        },
+        "Tara": {
+            "outfit": "outfit_2",
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a casual, relaxed expression, not speaking",
+                    "expression": "casual_listening",
+                    "pose_prompt": "standing, weight shifted casually to her right leg, looking forward, holding a glass tea cup in her right hand near her waist, left hand resting",
+                    "pose": "standing_holding_cup_right",
+                    "time": 0.0,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "4e1c26ef-dcb8-48dc-a451-ef7155908b3a",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_1.png"
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a casual, relaxed expression, eyes slightly shifted",
+                    "expression": "casual_glance_sipping",
+                    "pose_prompt": "standing, hips slightly tilted, looking forward, bringing the glass tea cup up to her mouth and taking a sip with her right hand",
+                    "pose": "standing_sipping_right_hand",
+                    "time": 3.5,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "9c1d5118-bdb2-4df9-8735-7053bd81e21a",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_2.png"
+                },
+                "image_3": {
+                    "index": 2,
+                    "expression_prompt": "an amused, smirking expression, about to speak",
+                    "expression": "amused_smirk",
+                    "pose_prompt": "standing, shifting weight forward slightly, looking forward, lowering the glass tea cup from her mouth, holding it in her right hand near her chest",
+                    "pose": "standing_lowering_cup_right",
+                    "time": 6.5,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "1033a60c-c1f4-41cb-be7f-3c5a0ca362cc",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_3.png"
+                },
+                "image_4": {
+                    "index": 3,
+                    "expression_prompt": "a conversational, confident speaking expression",
+                    "expression": "confident_speaking",
+                    "pose_prompt": "standing, feet planted slightly wider, making eye contact with someone off-screen, gesturing slightly with her left hand, holding the glass tea cup in her right hand",
+                    "pose": "standing_gesturing_speaking",
+                    "time": 9.0,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "111b9ab6-a4b5-4b19-94f9-7006b4ba74b3",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_4.png"
+                },
+                "image_5": {
+                    "index": 4,
+                    "expression_prompt": "a casual speaking expression, nodding slightly",
+                    "expression": "casual_speaking",
+                    "pose_prompt": "standing, left knee slightly bent, looking off-camera, holding the glass tea cup steady in her right hand",
+                    "pose": "standing_holding_steady",
+                    "time": 12.0,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "22c96384-2b20-4431-bf73-96c0a07821d9",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_5.png"
+                },
+                "image_6": {
+                    "index": 5,
+                    "expression_prompt": "a serious, attentive listening expression",
+                    "expression": "attentive_listening",
+                    "pose_prompt": "standing, shifting weight evenly on both feet, looking forward, holding the glass tea cup with both hands near her stomach",
+                    "pose": "standing_holding_cup_both_hands",
+                    "time": 15.0,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "eba540a1-60ed-462c-bd03-91d2019bf88a",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_6.png"
+                },
+                "image_7": {
+                    "index": 6,
+                    "expression_prompt": "a quiet, observing expression",
+                    "expression": "quiet_observing_sipping",
+                    "pose_prompt": "standing, right leg slightly relaxed, looking forward, taking a slow sip from the glass tea cup held in her left hand, right hand resting",
+                    "pose": "standing_sipping_left_hand",
+                    "time": 19.0,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "35b8db09-3bd4-45c9-828d-3540c7528661",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_7.png"
+                },
+                "image_8": {
+                    "index": 7,
+                    "expression_prompt": "a calm, grounded expression, not speaking",
+                    "expression": "calm_grounded",
+                    "pose_prompt": "standing, shifting weight to one leg, holding the glass tea cup lowered in her left hand",
+                    "pose": "standing_shifting_weight_left",
+                    "time": 24.0,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "59a96aed-392c-4030-a609-cd953716f906",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_8.png"
+                },
+                "image_9": {
+                    "index": 8,
+                    "expression_prompt": "a heavy sighing expression, eyes briefly closed",
+                    "expression": "heavy_sigh",
+                    "pose_prompt": "standing, hips tilted slightly, pinching the bridge of her nose with her free right hand, holding the glass tea cup in her left hand",
+                    "pose": "standing_pinching_nose",
+                    "time": 28.0,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "6605529a-53bf-4e8f-a4d8-cdf319e036d1",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_9.png"
+                },
+                "image_10": {
+                    "index": 9,
+                    "expression_prompt": "an annoyed but joking speaking expression",
+                    "expression": "annoyed_speaking",
+                    "pose_prompt": "standing, feet planted firmly, looking forward, dropping her right hand down, holding the glass tea cup in her left hand",
+                    "pose": "standing_dropping_hand",
+                    "time": 30.5,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "f95e90a5-448b-4c1b-8a56-fa06117e1b39",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_10.png"
+                },
+                "image_11": {
+                    "index": 10,
+                    "expression_prompt": "a sudden, energetic inhaling expression, preparing to shout",
+                    "expression": "inhaling_shout",
+                    "pose_prompt": "standing, leaning posture slightly forward and planting feet wider apart, turning head sharply, holding the glass tea cup in her left hand",
+                    "pose": "standing_turning_sharp",
+                    "time": 32.5,
+                    "camera_angle": "left profile view",
+                    "status": "approved",
+                    "prompt_id": "2acb911c-8f91-4822-9a46-88a4bc074144",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_11.png"
+                },
+                "image_12": {
+                    "index": 11,
+                    "expression_prompt": "a loud, projecting shouting expression, mouth wide open",
+                    "expression": "shouting_loudly",
+                    "pose_prompt": "standing, shifting weight forward aggressively, shouting towards off-camera, gesturing aggressively with her free right hand, holding the glass tea cup in her left hand",
+                    "pose": "standing_shouting_gesture",
+                    "time": 34.5,
+                    "camera_angle": "left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "e36e0401-211a-4647-9170-c5d44ba35af9",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_12.png"
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "prompt": "same woman, consistent character, slowly bringing the glass tea cup up to her mouth to take a sip, turning head slightly to a profile view, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "d3abe7f6-2ac1-4910-a337-4bad7d2ed929",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_1_to_image_2.webp"
+                },
+                "image_2_to_image_3": {
+                    "from_image": "image_2",
+                    "to_image": "image_3",
+                    "prompt": "same woman, consistent character, lowering the glass tea cup from her mouth to her chest, turning head to face slightly forward, forming an amused smirk to speak, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "d84ef6e4-d9f1-4118-8de8-81a19ed93929",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_2_to_image_3.webp"
+                },
+                "image_3_to_image_4": {
+                    "from_image": "image_3",
+                    "to_image": "image_4",
+                    "prompt": "same woman, consistent character, speaking confidently, raising her free left hand to make subtle conversational gestures, holding the glass tea cup steady in her right hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "a117ea15-b9d8-4296-9d9f-e9ce457222ff",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_3_to_image_4.webp"
+                },
+                "image_4_to_image_5": {
+                    "from_image": "image_4",
+                    "to_image": "image_5",
+                    "prompt": "same woman, consistent character, lowering her left hand, nodding slightly while speaking casually, turning head slightly to a profile view, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "52fe5692-3dee-43f1-bf38-9ca82f6076b9",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_4_to_image_5.webp"
+                },
+                "image_5_to_image_6": {
+                    "from_image": "image_5",
+                    "to_image": "image_6",
+                    "prompt": "same woman, consistent character, stopping speaking, turning head forward, bringing her left hand over to hold the glass tea cup with both hands near her stomach, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "6d1f217c-81e5-4a19-9a68-40dd8ec08030",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_5_to_image_6.webp"
+                },
+                "image_6_to_image_7": {
+                    "from_image": "image_6",
+                    "to_image": "image_7",
+                    "prompt": "same woman, consistent character, releasing her right hand, bringing the glass tea cup up to take a slow sip with her left hand, turning head slightly to a profile view, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "649f19ee-60b5-4d97-86f8-49e61073c337",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_6_to_image_7.webp"
+                },
+                "image_7_to_image_8": {
+                    "from_image": "image_7",
+                    "to_image": "image_8",
+                    "prompt": "same woman, consistent character, lowering the glass tea cup in her left hand, shifting her weight slightly to one leg, turning head forward to a calm grounded expression, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "f919e637-9d83-4f94-a28d-378882dd05c8",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_7_to_image_8.webp"
+                },
+                "image_8_to_image_9": {
+                    "from_image": "image_8",
+                    "to_image": "image_9",
+                    "prompt": "same woman, consistent character, closing eyes briefly for a heavy sigh, raising her free right hand to pinch the bridge of her nose, holding the glass tea cup steady in her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "16fb1d07-4de6-495e-9549-112b7ae3b2d7",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_8_to_image_9.webp"
+                },
+                "image_9_to_image_10": {
+                    "from_image": "image_9",
+                    "to_image": "image_10",
+                    "prompt": "same woman, consistent character, dropping her right hand down to her side, turning head forward to speak with an annoyed expression, holding the glass tea cup steady in her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "a6669d61-424b-4419-8fe7-76e6c6a94893",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_9_to_image_10.webp"
+                },
+                "image_10_to_image_11": {
+                    "from_image": "image_10",
+                    "to_image": "image_11",
+                    "prompt": "same woman, consistent character, suddenly turning head sharply to the side, leaning posture slightly forward and inhaling deeply to shout, holding the glass tea cup in her left hand, stable hands, cinematic stillness, fast controlled motion",
+                    "status": "approved",
+                    "prompt_id": "1334834f-83c8-4ffe-9639-5adb07ff3b12",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_10_to_image_11.webp"
+                },
+                "image_11_to_image_12": {
+                    "from_image": "image_11",
+                    "to_image": "image_12",
+                    "prompt": "same woman, consistent character, opening mouth wide to shout loudly, raising her free right hand to gesture aggressively, turning head forward, stable hands, cinematic stillness, energetic controlled motion",
+                    "status": "approved",
+                    "prompt_id": "ba0712d2-e84b-40a8-8a35-f636792b6056",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_11_to_image_12.webp"
+                }
+            },
+            "final_video": {
+                "status": "pending",
+                "prompt_id": null,
+                "output_path": null
+            }
+        },
+        "Naina": {
+            "outfit": "outfit_2",
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a calm, observant expression, not speaking",
+                    "expression": "calm_observant",
+                    "pose_prompt": "sitting on a stool, feet planted flat on the ground, looking forward, resting a glass tea cup in her right hand on her lap, left hand resting",
+                    "pose": "sitting_holding_cup_lap_right",
+                    "time": 0.0,
+                    "camera_angle": "front view",
+                    "status": "approved",
+                    "prompt_id": "1adbead9-babb-4787-86ad-a1a013f1d646",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_1.png"
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a relaxed, listening expression, eyes slightly shifted",
+                    "expression": "relaxed_sipping",
+                    "pose_prompt": "sitting on a stool, one foot tucked behind the stool leg, looking off-camera, bringing the glass tea cup up to take a slow sip with her right hand",
+                    "pose": "sitting_sipping_right_hand",
+                    "time": 3.5,
+                    "camera_angle": "slight right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "1390c0ec-851f-48b6-96b3-8e5cc276ce72",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_2.png"
+                },
+                "image_3": {
+                    "index": 2,
+                    "expression_prompt": "a quiet, attentive expression",
+                    "expression": "attentive_listening",
+                    "pose_prompt": "sitting on a stool, shifting her weight slightly on the seat, turning head slightly, lowering the glass tea cup, holding it in her right hand near her chest",
+                    "pose": "sitting_lowering_cup_right",
+                    "time": 7.0,
+                    "camera_angle": "slight left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "aa1b5376-9d26-4b34-88f7-3e9cc21a7e2d",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_3.png"
+                },
+                "image_4": {
+                    "index": 3,
+                    "expression_prompt": "a grounded, neutral expression",
+                    "expression": "grounded_neutral",
+                    "pose_prompt": "sitting on a stool, legs crossed at the ankles, looking forward, holding the glass tea cup with both hands resting in her lap",
+                    "pose": "sitting_holding_cup_both_hands_lap",
+                    "time": 10.5,
+                    "camera_angle": "front view",
+                    "status": "approved",
+                    "prompt_id": "06731b6a-5928-493c-931e-305fdf68f0c9",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_4.png"
+                },
+                "image_5": {
+                    "index": 4,
+                    "expression_prompt": "a slightly empathetic, observant expression",
+                    "expression": "empathetic_observant",
+                    "pose_prompt": "sitting on a stool, leaning slightly forward with feet planted flat, tilting head slightly to listen, holding the glass tea cup with both hands",
+                    "pose": "sitting_tilting_head",
+                    "time": 14.0,
+                    "camera_angle": "slight right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "c15a2552-b6bc-47f8-bf07-c818052f8a15",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_5.png"
+                },
+                "image_6": {
+                    "index": 5,
+                    "expression_prompt": "a thoughtful, melancholic listening expression",
+                    "expression": "thoughtful_melancholic",
+                    "pose_prompt": "sitting on a stool, relaxing her posture, looking slightly down, holding the glass tea cup in her left hand, right hand resting",
+                    "pose": "sitting_looking_down_left_hand",
+                    "time": 17.5,
+                    "camera_angle": "front view",
+                    "status": "approved",
+                    "prompt_id": "19835c0f-1dbc-4e7c-aa1f-9d939fe3cdd3",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_6.png"
+                },
+                "image_7": {
+                    "index": 6,
+                    "expression_prompt": "a calm, agreeable expression, nodding subtly",
+                    "expression": "calm_agreeing",
+                    "pose_prompt": "sitting on a stool, one foot resting on the stool rung, looking off-camera, holding the glass tea cup steady in her left hand",
+                    "pose": "sitting_nodding_subtly",
+                    "time": 21.0,
+                    "camera_angle": "slight left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "6b1ae426-857c-4337-8135-d8af7d159cb9",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_7.png"
+                },
+                "image_8": {
+                    "index": 7,
+                    "expression_prompt": "a grounded, preparing to speak expression",
+                    "expression": "preparing_to_speak",
+                    "pose_prompt": "sitting on a stool, shifting posture slightly up with feet planted, looking forward, holding the glass tea cup in her left hand",
+                    "pose": "sitting_shifting_posture",
+                    "time": 24.5,
+                    "camera_angle": "front view",
+                    "status": "approved",
+                    "prompt_id": "f583a575-1071-4448-ac5c-0024a657e2d8",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_8.png"
+                },
+                "image_9": {
+                    "index": 8,
+                    "expression_prompt": "a calm, matter-of-fact speaking expression",
+                    "expression": "matter_of_fact_speaking",
+                    "pose_prompt": "sitting on a stool, leaning slightly forward, making eye contact off-screen, gesturing slightly with her free right hand, holding tea in left hand",
+                    "pose": "sitting_speaking_gesturing",
+                    "time": 26.0,
+                    "camera_angle": "slight right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "d962c6b0-7d95-42a6-b3be-f16df8fcdb79",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_9.png"
+                },
+                "image_10": {
+                    "index": 9,
+                    "expression_prompt": "a resigned, agreeing speaking expression, nodding",
+                    "expression": "resigned_nodding_speaking",
+                    "pose_prompt": "sitting on a stool, legs crossed at the ankles, nodding while looking forward, resting the glass tea cup on her lap in her left hand",
+                    "pose": "sitting_nodding_speaking",
+                    "time": 28.5,
+                    "camera_angle": "front view",
+                    "status": "approved",
+                    "prompt_id": "0524835a-42bd-4b25-9f1a-456c28d5e9c0",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_10.png"
+                },
+                "image_11": {
+                    "index": 10,
+                    "expression_prompt": "a soft, relaxed smile, quietly chuckling",
+                    "expression": "soft_smile_chuckling",
+                    "pose_prompt": "sitting on a stool, relaxing back slightly, looking off-camera, smiling naturally, bringing the glass tea cup up for a sip with her left hand",
+                    "pose": "sitting_smiling_sipping",
+                    "time": 32.0,
+                    "camera_angle": "slight left 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "eb500439-c94f-4d26-803d-05031224fa29",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_11.png"
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "prompt": "same woman, consistent character, sitting, slowly raising the glass tea cup from her lap up to her mouth to take a sip, turning head slightly, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "9954a081-cd50-4768-8e65-e8601320adb0",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_1_to_image_2.webp"
+                },
+                "image_2_to_image_3": {
+                    "from_image": "image_2",
+                    "to_image": "image_3",
+                    "prompt": "same woman, consistent character, sitting, turning head slightly to the other side, slowly lowering the glass tea cup to her chest level, shifting to an attentive expression, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "973da18d-8a7e-49ef-ba3f-5a0266aff7e6",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_2_to_image_3.webp"
+                },
+                "image_3_to_image_4": {
+                    "from_image": "image_3",
+                    "to_image": "image_4",
+                    "prompt": "same woman, consistent character, sitting, turning head forward, lowering the glass tea cup to her lap and holding it with both hands, relaxing into a neutral expression, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "f7d4bdc8-1155-49fa-b509-8f83ee9ceaf1",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_3_to_image_4.webp"
+                },
+                "image_4_to_image_5": {
+                    "from_image": "image_4",
+                    "to_image": "image_5",
+                    "prompt": "same woman, consistent character, sitting, tilting head slightly to listen, maintaining grip on the glass tea cup with both hands in her lap, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "e1a2184b-a5f1-49f1-bef0-7c7b191c30c7",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_4_to_image_5.webp"
+                },
+                "image_5_to_image_6": {
+                    "from_image": "image_5",
+                    "to_image": "image_6",
+                    "prompt": "same woman, consistent character, sitting, straightening her head and looking slightly down, releasing her right hand to rest, holding the glass tea cup in her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "0abf61e7-1cca-4789-9e0d-e5a07bca8a5a",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_5_to_image_6.webp"
+                },
+                "image_6_to_image_7": {
+                    "from_image": "image_6",
+                    "to_image": "image_7",
+                    "prompt": "same woman, consistent character, sitting, raising her head slightly to look off-camera, nodding subtly in agreement, holding the glass tea cup steady in her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "9f78e8ae-842e-4149-b37e-0b7a6906b45f",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_6_to_image_7.webp"
+                },
+                "image_7_to_image_8": {
+                    "from_image": "image_7",
+                    "to_image": "image_8",
+                    "prompt": "same woman, consistent character, sitting, turning head forward, shifting her posture slightly upward to prepare to speak, holding the glass tea cup in her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "4a7773ff-a55e-42f8-939c-b863a2aed033",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_7_to_image_8.webp"
+                },
+                "image_8_to_image_9": {
+                    "from_image": "image_8",
+                    "to_image": "image_9",
+                    "prompt": "same woman, consistent character, sitting, opening mouth to speak calmly, raising her free right hand to gesture slightly, holding the glass tea cup steady in her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "68faf81e-d7f6-46cc-9810-4d48062b1509",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_8_to_image_9.webp"
+                },
+                "image_9_to_image_10": {
+                    "from_image": "image_9",
+                    "to_image": "image_10",
+                    "prompt": "same woman, consistent character, sitting, lowering her right hand, nodding while continuing to speak, resting the glass tea cup on her lap in her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "55e4c70f-edb0-4936-92cf-7b4376a61053",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_9_to_image_10.webp"
+                },
+                "image_10_to_image_11": {
+                    "from_image": "image_10",
+                    "to_image": "image_11",
+                    "prompt": "same woman, consistent character, sitting, stopping speaking and smiling softly, bringing the glass tea cup up from her lap to take a sip with her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "d2b1b85d-24fe-4c59-84fd-b929aa4542ed",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_10_to_image_11.webp"
+                }
+            },
+            "final_video": {
+                "status": "pending",
+                "prompt_id": null,
+                "output_path": null
+            }
+        },
+        "Aditya": {
+            "outfit": "outfit_2",
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a tired, listening expression, not speaking",
+                    "expression": "tired_listening",
+                    "pose_prompt": "standing, weight shifted to his left leg, looking forward, holding a glass tea cup in his right hand near his chest, left hand resting",
+                    "pose": "standing_holding_cup_right",
+                    "time": 0.0,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "6863ae3f-6215-4d13-a187-3c0f864d4bec",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1.png"
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a casual, quiet expression, eyes slightly shifted",
+                    "expression": "casual_sipping",
+                    "pose_prompt": "standing, hips slightly tilted with right knee bent, looking off-camera, bringing the glass tea cup up to his mouth to take a slow sip with his right hand",
+                    "pose": "standing_sipping_right_hand",
+                    "time": 3.5,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "8b5631ac-cbfd-42da-ab52-7a5be19fd7ca",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2.png"
+                },
+                "image_3": {
+                    "index": 2,
+                    "expression_prompt": "a focused, attentive listening expression",
+                    "expression": "attentive_listening",
+                    "pose_prompt": "standing, shifting weight evenly on both feet, looking forward, lowering the glass tea cup, holding it in his right hand near his waist",
+                    "pose": "standing_lowering_cup_right",
+                    "time": 7.0,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "998e4806-35de-4c01-a644-134647a1cc45",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_3.png"
+                },
+                "image_4": {
+                    "index": 3,
+                    "expression_prompt": "a thoughtful, slightly exhausted expression",
+                    "expression": "thoughtful_exhausted",
+                    "pose_prompt": "standing, shifting weight slightly to one leg, bringing both hands together to hold the glass tea cup near his stomach",
+                    "pose": "standing_holding_cup_both_hands",
+                    "time": 10.5,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "7a552f71-13ff-47fa-a5a7-d4e76ab3e7d3",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_4.png"
+                },
+                "image_5": {
+                    "index": 4,
+                    "expression_prompt": "a heavy, melancholic expression, looking down",
+                    "expression": "melancholic_looking_down",
+                    "pose_prompt": "standing, feet planted firmly but posture slumped, lowering head slightly, looking down at the ground, holding the glass tea cup with both hands",
+                    "pose": "standing_looking_down_both_hands",
+                    "time": 14.0,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "6db619cf-d576-4144-a026-2a9cf30de07e",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_5.png"
+                },
+                "image_6": {
+                    "index": 5,
+                    "expression_prompt": "a relatable, exhausted sighing expression",
+                    "expression": "exhausted_sigh",
+                    "pose_prompt": "standing, hips tilted slightly, looking up slightly, moving the glass tea cup to his left hand, right hand resting",
+                    "pose": "standing_shifting_to_left_hand",
+                    "time": 17.5,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "c8900921-f1f1-4c62-a682-f0b01249e298",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_6.png"
+                },
+                "image_7": {
+                    "index": 6,
+                    "expression_prompt": "a heavy, agreeing speaking expression, nodding",
+                    "expression": "agreeing_speaking_heavy",
+                    "pose_prompt": "standing, leaning slightly forward on his toes, making eye contact off-screen, nodding slowly, holding the glass tea cup steady in his left hand",
+                    "pose": "standing_speaking_nodding",
+                    "time": 21.0,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "9f74fd13-5242-40b1-ab5f-b580b3dbcc28",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_7.png"
+                },
+                "image_8": {
+                    "index": 7,
+                    "expression_prompt": "a frustrated, venting speaking expression",
+                    "expression": "frustrated_venting",
+                    "pose_prompt": "standing, planting feet slightly wider apart, looking forward, gesturing slightly with his free right hand, holding the glass tea cup in his left hand",
+                    "pose": "standing_gesturing_speaking",
+                    "time": 24.0,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "f9781cb8-e489-49bd-996d-981205d82557",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_8.png"
+                },
+                "image_9": {
+                    "index": 8,
+                    "expression_prompt": "a calm, agreeing listening expression",
+                    "expression": "agreeing_listening",
+                    "pose_prompt": "standing, shifting weight back to his left leg, looking slightly down, dropping his right hand to rest, holding the glass tea cup in his left hand",
+                    "pose": "standing_listening_left_hand",
+                    "time": 27.5,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "4d51a852-c402-4827-9f35-b000a3a9665e",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_9.png"
+                },
+                "image_10": {
+                    "index": 9,
+                    "expression_prompt": "a startled, slightly amused reaction expression",
+                    "expression": "startled_amused",
+                    "pose_prompt": "standing, taking a subtle half-step back, turning head sharply to look forward, leaning back slightly, holding the glass tea cup in his left hand",
+                    "pose": "standing_reacting_sharp",
+                    "time": 31.0,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "e95e9ef6-9d65-4566-87c2-09bbc23171d5",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_10.png"
+                },
+                "image_11": {
+                    "index": 10,
+                    "expression_prompt": "a faint, relieved smile",
+                    "expression": "relieved_smile",
+                    "pose_prompt": "standing, relaxing his stance, looking forward, bringing the glass tea cup up for another sip with his left hand",
+                    "pose": "standing_sipping_left_hand",
+                    "time": 34.0,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "422c00ce-8d9d-4222-9241-da61624dcce7",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_11.png"
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "prompt": "same man, consistent character, turning head slightly from a profile view, bringing the glass tea cup up to his mouth to take a slow sip with his right hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "210205ea-bb31-4743-8518-78663bfb4f75",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1_to_image_2.webp"
+                },
+                "image_2_to_image_3": {
+                    "from_image": "image_2",
+                    "to_image": "image_3",
+                    "prompt": "same man, consistent character, turning head back to a profile view, lowering the glass tea cup from his mouth down near his waist, focusing into an attentive expression, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "7624c6a0-39a8-4d55-99f2-44731d5b5252",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2_to_image_3.webp"
+                },
+                "image_3_to_image_4": {
+                    "from_image": "image_3",
+                    "to_image": "image_4",
+                    "prompt": "same man, consistent character, shifting weight slightly, turning head forward, bringing his free left hand over to hold the glass tea cup with both hands near his stomach, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "2f5e9949-72a1-4e0b-8fd7-95e30834666d",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_3_to_image_4.webp"
+                },
+                "image_4_to_image_5": {
+                    "from_image": "image_4",
+                    "to_image": "image_5",
+                    "prompt": "same man, consistent character, turning head to a profile view, lowering his head slightly to look down at the ground, maintaining a two-handed grip on the glass tea cup, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "19d2c7a1-10cc-4d7f-afbf-65e7ebc337d8",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_4_to_image_5.webp"
+                },
+                "image_5_to_image_6": {
+                    "from_image": "image_5",
+                    "to_image": "image_6",
+                    "prompt": "same man, consistent character, raising his head to look up slightly, sighing exhaustedly, releasing his right hand and moving the glass tea cup entirely to his left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "cb65215b-7541-4815-9bb6-c2a9a25cac80",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_5_to_image_6.webp"
+                },
+                "image_6_to_image_7": {
+                    "from_image": "image_6",
+                    "to_image": "image_7",
+                    "prompt": "same man, consistent character, turning head back to a profile view, opening mouth to speak heavily, nodding slowly, holding the glass tea cup steady in his left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "0f3bb670-e372-4191-8d22-138a1b70263b",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_6_to_image_7.webp"
+                },
+                "image_7_to_image_8": {
+                    "from_image": "image_7",
+                    "to_image": "image_8",
+                    "prompt": "same man, consistent character, turning head forward, speaking with frustration, raising his free right hand to gesture, holding the glass tea cup in his left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "31d23787-ef55-4d8c-a6a7-6c64efb1fbf3",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_7_to_image_8.webp"
+                },
+                "image_8_to_image_9": {
+                    "from_image": "image_8",
+                    "to_image": "image_9",
+                    "prompt": "same man, consistent character, stopping speaking, turning head to a profile view and looking slightly down, dropping his right hand to rest, holding the glass tea cup in his left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "2c89bf83-77fd-4152-814c-8160a6b5b1d2",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_8_to_image_9.webp"
+                },
+                "image_9_to_image_10": {
+                    "from_image": "image_9",
+                    "to_image": "image_10",
+                    "prompt": "same man, consistent character, suddenly turning head sharply forward to react, leaning back slightly in surprise, holding the glass tea cup steady in his left hand, stable hands, cinematic stillness, fast controlled motion",
+                    "status": "approved",
+                    "prompt_id": "597c6c9b-f3b9-4aa8-9e43-f159217c765f",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_9_to_image_10.webp"
+                },
+                "image_10_to_image_11": {
+                    "from_image": "image_10",
+                    "to_image": "image_11",
+                    "prompt": "same man, consistent character, relaxing into a faint relieved smile, turning head back to a profile view, bringing the glass tea cup up to take a sip with his left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "fef8a322-2ad7-42aa-a5d4-98b442199b3f",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_10_to_image_11.webp"
+                }
+            },
+            "final_video": {
+                "status": "pending",
+                "prompt_id": null,
+                "output_path": null
+            }
+        },
+        "Ananya": {
+            "outfit": "outfit_2",
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a casual, relaxed listening expression, not speaking",
+                    "expression": "casual_listening",
+                    "pose_prompt": "sitting on a stool, legs crossed at the ankles, looking forward, resting a glass tea cup in her right hand on her lap, left hand resting",
+                    "pose": "sitting_holding_cup_lap_right",
+                    "time": 0.0,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "3cde3e48-d590-405c-8c63-35947184b656",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_1.png"
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "an attentive, curious listening expression",
+                    "expression": "attentive_curious",
+                    "pose_prompt": "sitting on a stool, leaning slightly forward with feet planted flat, looking forward, bringing the glass tea cup up to take a slow sip with her right hand",
+                    "pose": "sitting_sipping_right_hand",
+                    "time": 5.5,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "ee956acc-af75-4a77-8f45-2df3c9559e32",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_2.png"
+                },
+                "image_3": {
+                    "index": 2,
+                    "expression_prompt": "an empathetic, slightly concerned listening expression",
+                    "expression": "empathetic_concerned",
+                    "pose_prompt": "sitting on a stool, shifting weight slightly on the seat, tilting head slightly, lowering the glass tea cup and holding it with both hands on her lap",
+                    "pose": "sitting_holding_cup_both_hands_lap",
+                    "time": 12.5,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "fc82899c-fdee-4beb-81e4-2358f17769b7",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_3.png"
+                },
+                "image_4": {
+                    "index": 3,
+                    "expression_prompt": "a thoughtful, slightly melancholic expression, looking down",
+                    "expression": "thoughtful_melancholic",
+                    "pose_prompt": "sitting on a stool, one foot tucked behind the stool leg, looking down slightly, shifting weight, holding the glass tea cup in her left hand, right hand resting",
+                    "pose": "sitting_looking_down_left_hand",
+                    "time": 19.0,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "c47cd87a-1158-46b0-b9e2-d5c78bf0f77d",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_4.png"
+                },
+                "image_5": {
+                    "index": 4,
+                    "expression_prompt": "a calm, agreeable listening expression, nodding slowly",
+                    "expression": "calm_nodding",
+                    "pose_prompt": "sitting on a stool, relaxing her posture back slightly, looking forward, nodding in agreement, holding the glass tea cup steady in her left hand",
+                    "pose": "sitting_nodding_left_hand",
+                    "time": 24.5,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "4ca6a1fb-ab1c-4b8a-8b71-ba14d63502b2",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_5.png"
+                },
+                "image_6": {
+                    "index": 5,
+                    "expression_prompt": "a startled, wide-eyed reaction expression",
+                    "expression": "startled_surprised",
+                    "pose_prompt": "sitting on a stool, posture straightening up suddenly with feet planted, looking sharply forward, holding the glass tea cup in her left hand",
+                    "pose": "sitting_reacting_sharp",
+                    "time": 30.0,
+                    "camera_angle": "right profile view",
+                    "status": "approved",
+                    "prompt_id": "43b24ed6-efd9-4109-a37c-539776b801ee",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_6.png"
+                },
+                "image_7": {
+                    "index": 6,
+                    "expression_prompt": "a bright, amused smile, quietly laughing",
+                    "expression": "amused_laughing",
+                    "pose_prompt": "sitting on a stool, legs crossed at the ankles, looking forward, smiling broadly, bringing the glass tea cup up for a sip with her left hand",
+                    "pose": "sitting_smiling_sipping",
+                    "time": 34.0,
+                    "camera_angle": "right 3/4 view",
+                    "status": "approved",
+                    "prompt_id": "8fa4120e-6f01-4238-883f-48e605468ff7",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_7.png"
+                }
+            },
+            "transitions": {
+                "image_1_to_image_2": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "prompt": "same woman, consistent character, sitting, turning head to a profile view, bringing the glass tea cup up from her lap to her mouth to take a slow sip with her right hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "52adf8c3-3466-4e68-a162-4bbe7e467dea",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_1_to_image_2.webp"
+                },
+                "image_2_to_image_3": {
+                    "from_image": "image_2",
+                    "to_image": "image_3",
+                    "prompt": "same woman, consistent character, sitting, turning head forward and tilting it slightly, lowering the glass tea cup back to her lap and holding it with both hands, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "596e58be-12ae-44f1-8f3f-c568ce894697",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_2_to_image_3.webp"
+                },
+                "image_3_to_image_4": {
+                    "from_image": "image_3",
+                    "to_image": "image_4",
+                    "prompt": "same woman, consistent character, sitting, turning head to a profile view and looking down slightly, shifting weight, releasing her right hand to hold the glass tea cup in her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "4019eb3d-36c9-4e19-8c61-f4735d38831e",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_3_to_image_4.webp"
+                },
+                "image_4_to_image_5": {
+                    "from_image": "image_4",
+                    "to_image": "image_5",
+                    "prompt": "same woman, consistent character, sitting, turning head forward, nodding slowly in agreement, holding the glass tea cup steady in her left hand on her lap, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "814c5a4e-24de-4e37-aecc-21e6230c131b",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_4_to_image_5.webp"
+                },
+                "image_5_to_image_6": {
+                    "from_image": "image_5",
+                    "to_image": "image_6",
+                    "prompt": "same woman, consistent character, sitting, suddenly snapping head to a profile view, straightening posture upward in surprise, holding the glass tea cup steady in her left hand, stable hands, cinematic stillness, fast controlled motion",
+                    "status": "approved",
+                    "prompt_id": "6e815b5d-394b-4cd8-811e-604488d06faa",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_5_to_image_6.webp"
+                },
+                "image_6_to_image_7": {
+                    "from_image": "image_6",
+                    "to_image": "image_7",
+                    "prompt": "same woman, consistent character, sitting, relaxing into a bright amused smile, turning head forward, bringing the glass tea cup up from her lap to take a sip with her left hand, stable hands, cinematic stillness, smooth controlled motion",
+                    "status": "approved",
+                    "prompt_id": "f5842bc0-1dec-4bb9-ab9f-6d1d03e60267",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_6_to_image_7.webp"
+                }
+            },
+            "final_video": {
+                "status": "pending",
+                "prompt_id": null,
+                "output_path": null
+            }
+        }
+    },
+    "jobs": {
+        "a08ba442-c123-464d-8b13-48301d88ec01": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_1.png"
+        },
+        "0314a4c4-bf65-45f3-ac9a-684b80438b50": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_2.png"
+        },
+        "66403d81-0677-48ab-868c-f67ba092e52d": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_3",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_3.png"
+        },
+        "492e076b-bb56-4074-9ceb-24ca000b2ee4": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_4",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_4.png"
+        },
+        "9ea6e163-2c49-4083-ae08-317a7ba98c38": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_5",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_5.png"
+        },
+        "d511fcf4-a20f-41b6-afb5-88e49dace732": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_6",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_6.png"
+        },
+        "91ee03c5-a477-4d66-b7a9-eb9eeb1daed5": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_7",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_7.png"
+        },
+        "f51d9301-561b-4c6a-9309-507598967d38": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_8",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_8.png"
+        },
+        "c94330ad-8f47-4fcd-bd3f-0b4e822412e4": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_9",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_9.png"
+        },
+        "f12e5f32-684d-4e18-a566-d3658a37bdb6": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_10",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_10.png"
+        },
+        "e89b5e71-5716-4d7b-9859-20680fd92726": {
+            "type": "image",
+            "character": "Arjun",
+            "image_id": "image_11",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_11.png"
+        },
+        "4e1c26ef-dcb8-48dc-a451-ef7155908b3a": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_1.png"
+        },
+        "9c1d5118-bdb2-4df9-8735-7053bd81e21a": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_2.png"
+        },
+        "1033a60c-c1f4-41cb-be7f-3c5a0ca362cc": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_3",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_3.png"
+        },
+        "111b9ab6-a4b5-4b19-94f9-7006b4ba74b3": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_4",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_4.png"
+        },
+        "22c96384-2b20-4431-bf73-96c0a07821d9": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_5",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_5.png"
+        },
+        "eba540a1-60ed-462c-bd03-91d2019bf88a": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_6",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_6.png"
+        },
+        "35b8db09-3bd4-45c9-828d-3540c7528661": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_7",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_7.png"
+        },
+        "59a96aed-392c-4030-a609-cd953716f906": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_8",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_8.png"
+        },
+        "6605529a-53bf-4e8f-a4d8-cdf319e036d1": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_9",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_9.png"
+        },
+        "f95e90a5-448b-4c1b-8a56-fa06117e1b39": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_10",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_10.png"
+        },
+        "2acb911c-8f91-4822-9a46-88a4bc074144": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_11",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_11.png"
+        },
+        "e36e0401-211a-4647-9170-c5d44ba35af9": {
+            "type": "image",
+            "character": "Tara",
+            "image_id": "image_12",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_12.png"
+        },
+        "1adbead9-babb-4787-86ad-a1a013f1d646": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_1.png"
+        },
+        "1390c0ec-851f-48b6-96b3-8e5cc276ce72": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_2.png"
+        },
+        "aa1b5376-9d26-4b34-88f7-3e9cc21a7e2d": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_3",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_3.png"
+        },
+        "06731b6a-5928-493c-931e-305fdf68f0c9": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_4",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_4.png"
+        },
+        "c15a2552-b6bc-47f8-bf07-c818052f8a15": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_5",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_5.png"
+        },
+        "19835c0f-1dbc-4e7c-aa1f-9d939fe3cdd3": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_6",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_6.png"
+        },
+        "6b1ae426-857c-4337-8135-d8af7d159cb9": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_7",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_7.png"
+        },
+        "f583a575-1071-4448-ac5c-0024a657e2d8": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_8",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_8.png"
+        },
+        "d962c6b0-7d95-42a6-b3be-f16df8fcdb79": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_9",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_9.png"
+        },
+        "0524835a-42bd-4b25-9f1a-456c28d5e9c0": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_10",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_10.png"
+        },
+        "eb500439-c94f-4d26-803d-05031224fa29": {
+            "type": "image",
+            "character": "Naina",
+            "image_id": "image_11",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_11.png"
+        },
+        "6863ae3f-6215-4d13-a187-3c0f864d4bec": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1.png"
+        },
+        "8b5631ac-cbfd-42da-ab52-7a5be19fd7ca": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2.png"
+        },
+        "998e4806-35de-4c01-a644-134647a1cc45": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_3",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_3.png"
+        },
+        "7a552f71-13ff-47fa-a5a7-d4e76ab3e7d3": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_4",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_4.png"
+        },
+        "6db619cf-d576-4144-a026-2a9cf30de07e": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_5",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_5.png"
+        },
+        "c8900921-f1f1-4c62-a682-f0b01249e298": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_6",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_6.png"
+        },
+        "9f74fd13-5242-40b1-ab5f-b580b3dbcc28": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_7",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_7.png"
+        },
+        "f9781cb8-e489-49bd-996d-981205d82557": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_8",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_8.png"
+        },
+        "4d51a852-c402-4827-9f35-b000a3a9665e": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_9",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_9.png"
+        },
+        "e95e9ef6-9d65-4566-87c2-09bbc23171d5": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_10",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_10.png"
+        },
+        "422c00ce-8d9d-4222-9241-da61624dcce7": {
+            "type": "image",
+            "character": "Aditya",
+            "image_id": "image_11",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_11.png"
+        },
+        "3cde3e48-d590-405c-8c63-35947184b656": {
+            "type": "image",
+            "character": "Ananya",
+            "image_id": "image_1",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_1.png"
+        },
+        "ee956acc-af75-4a77-8f45-2df3c9559e32": {
+            "type": "image",
+            "character": "Ananya",
+            "image_id": "image_2",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_2.png"
+        },
+        "fc82899c-fdee-4beb-81e4-2358f17769b7": {
+            "type": "image",
+            "character": "Ananya",
+            "image_id": "image_3",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_3.png"
+        },
+        "c47cd87a-1158-46b0-b9e2-d5c78bf0f77d": {
+            "type": "image",
+            "character": "Ananya",
+            "image_id": "image_4",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_4.png"
+        },
+        "4ca6a1fb-ab1c-4b8a-8b71-ba14d63502b2": {
+            "type": "image",
+            "character": "Ananya",
+            "image_id": "image_5",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_5.png"
+        },
+        "43b24ed6-efd9-4109-a37c-539776b801ee": {
+            "type": "image",
+            "character": "Ananya",
+            "image_id": "image_6",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_6.png"
+        },
+        "8fa4120e-6f01-4238-883f-48e605468ff7": {
+            "type": "image",
+            "character": "Ananya",
+            "image_id": "image_7",
+            "transition_id": "",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_7.png"
+        },
+        "507da3d1-5b92-4d4f-88c1-7fbe836cff15": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_1_to_image_2.webp"
+        },
+        "4a92a7f2-dbcd-4f7e-ab47-d4ef5c0ab4f1": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_2_to_image_3",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_2_to_image_3.webp"
+        },
+        "e9197d49-c741-4ce0-a8f2-13c453ab78c4": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_3_to_image_4",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_3_to_image_4.webp"
+        },
+        "95403a3d-2557-43c7-b76c-0e3befda2197": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_4_to_image_5",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_4_to_image_5.webp"
+        },
+        "d6aebea1-28ef-461c-bbbb-0d586b7b10e0": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_5_to_image_6",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_5_to_image_6.webp"
+        },
+        "7f1299b1-6fd8-4d2b-ae0e-0f0071ee2004": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_6_to_image_7",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_6_to_image_7.webp"
+        },
+        "df0cee51-b724-4bea-b1d9-662f346a27ee": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_7_to_image_8",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_7_to_image_8.webp"
+        },
+        "e928c91a-1ad1-4459-8749-e6eb74dbdc25": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_8_to_image_9",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_8_to_image_9.webp"
+        },
+        "66cbb7c2-2727-44f8-a33e-4a9ece853526": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_9_to_image_10",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_9_to_image_10.webp"
+        },
+        "ec243d8e-9c33-4f51-a32f-ff2a9a29aaf4": {
+            "type": "transition",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "image_10_to_image_11",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_10_to_image_11.webp"
+        },
+        "d3abe7f6-2ac1-4910-a337-4bad7d2ed929": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_1_to_image_2.webp"
+        },
+        "d84ef6e4-d9f1-4118-8de8-81a19ed93929": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_2_to_image_3",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_2_to_image_3.webp"
+        },
+        "a117ea15-b9d8-4296-9d9f-e9ce457222ff": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_3_to_image_4",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_3_to_image_4.webp"
+        },
+        "52fe5692-3dee-43f1-bf38-9ca82f6076b9": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_4_to_image_5",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_4_to_image_5.webp"
+        },
+        "6d1f217c-81e5-4a19-9a68-40dd8ec08030": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_5_to_image_6",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_5_to_image_6.webp"
+        },
+        "649f19ee-60b5-4d97-86f8-49e61073c337": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_6_to_image_7",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_6_to_image_7.webp"
+        },
+        "f919e637-9d83-4f94-a28d-378882dd05c8": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_7_to_image_8",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_7_to_image_8.webp"
+        },
+        "16fb1d07-4de6-495e-9549-112b7ae3b2d7": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_8_to_image_9",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_8_to_image_9.webp"
+        },
+        "a6669d61-424b-4419-8fe7-76e6c6a94893": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_9_to_image_10",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_9_to_image_10.webp"
+        },
+        "1334834f-83c8-4ffe-9639-5adb07ff3b12": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_10_to_image_11",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_10_to_image_11.webp"
+        },
+        "ba0712d2-e84b-40a8-8a35-f636792b6056": {
+            "type": "transition",
+            "character": "Tara",
+            "image_id": "",
+            "transition_id": "image_11_to_image_12",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Tara\\image_11_to_image_12.webp"
+        },
+        "9954a081-cd50-4768-8e65-e8601320adb0": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_1_to_image_2.webp"
+        },
+        "973da18d-8a7e-49ef-ba3f-5a0266aff7e6": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_2_to_image_3",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_2_to_image_3.webp"
+        },
+        "f7d4bdc8-1155-49fa-b509-8f83ee9ceaf1": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_3_to_image_4",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_3_to_image_4.webp"
+        },
+        "e1a2184b-a5f1-49f1-bef0-7c7b191c30c7": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_4_to_image_5",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_4_to_image_5.webp"
+        },
+        "0abf61e7-1cca-4789-9e0d-e5a07bca8a5a": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_5_to_image_6",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_5_to_image_6.webp"
+        },
+        "9f78e8ae-842e-4149-b37e-0b7a6906b45f": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_6_to_image_7",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_6_to_image_7.webp"
+        },
+        "4a7773ff-a55e-42f8-939c-b863a2aed033": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_7_to_image_8",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_7_to_image_8.webp"
+        },
+        "68faf81e-d7f6-46cc-9810-4d48062b1509": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_8_to_image_9",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_8_to_image_9.webp"
+        },
+        "55e4c70f-edb0-4936-92cf-7b4376a61053": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_9_to_image_10",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_9_to_image_10.webp"
+        },
+        "d2b1b85d-24fe-4c59-84fd-b929aa4542ed": {
+            "type": "transition",
+            "character": "Naina",
+            "image_id": "",
+            "transition_id": "image_10_to_image_11",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_10_to_image_11.webp"
+        },
+        "210205ea-bb31-4743-8518-78663bfb4f75": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1_to_image_2.webp"
+        },
+        "7624c6a0-39a8-4d55-99f2-44731d5b5252": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_2_to_image_3",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2_to_image_3.webp"
+        },
+        "2f5e9949-72a1-4e0b-8fd7-95e30834666d": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_3_to_image_4",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_3_to_image_4.webp"
+        },
+        "19d2c7a1-10cc-4d7f-afbf-65e7ebc337d8": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_4_to_image_5",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_4_to_image_5.webp"
+        },
+        "cb65215b-7541-4815-9bb6-c2a9a25cac80": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_5_to_image_6",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_5_to_image_6.webp"
+        },
+        "0f3bb670-e372-4191-8d22-138a1b70263b": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_6_to_image_7",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_6_to_image_7.webp"
+        },
+        "31d23787-ef55-4d8c-a6a7-6c64efb1fbf3": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_7_to_image_8",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_7_to_image_8.webp"
+        },
+        "2c89bf83-77fd-4152-814c-8160a6b5b1d2": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_8_to_image_9",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_8_to_image_9.webp"
+        },
+        "597c6c9b-f3b9-4aa8-9e43-f159217c765f": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_9_to_image_10",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_9_to_image_10.webp"
+        },
+        "fef8a322-2ad7-42aa-a5d4-98b442199b3f": {
+            "type": "transition",
+            "character": "Aditya",
+            "image_id": "",
+            "transition_id": "image_10_to_image_11",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_10_to_image_11.webp"
+        },
+        "52adf8c3-3466-4e68-a162-4bbe7e467dea": {
+            "type": "transition",
+            "character": "Ananya",
+            "image_id": "",
+            "transition_id": "image_1_to_image_2",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_1_to_image_2.webp"
+        },
+        "596e58be-12ae-44f1-8f3f-c568ce894697": {
+            "type": "transition",
+            "character": "Ananya",
+            "image_id": "",
+            "transition_id": "image_2_to_image_3",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_2_to_image_3.webp"
+        },
+        "4019eb3d-36c9-4e19-8c61-f4735d38831e": {
+            "type": "transition",
+            "character": "Ananya",
+            "image_id": "",
+            "transition_id": "image_3_to_image_4",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_3_to_image_4.webp"
+        },
+        "814c5a4e-24de-4e37-aecc-21e6230c131b": {
+            "type": "transition",
+            "character": "Ananya",
+            "image_id": "",
+            "transition_id": "image_4_to_image_5",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_4_to_image_5.webp"
+        },
+        "6e815b5d-394b-4cd8-811e-604488d06faa": {
+            "type": "transition",
+            "character": "Ananya",
+            "image_id": "",
+            "transition_id": "image_5_to_image_6",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_5_to_image_6.webp"
+        },
+        "f5842bc0-1dec-4bb9-ab9f-6d1d03e60267": {
+            "type": "transition",
+            "character": "Ananya",
+            "image_id": "",
+            "transition_id": "image_6_to_image_7",
+            "status": "completed",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Ananya\\image_6_to_image_7.webp"
+        },
+        "eccf1b70-a185-4644-9647-792d4a80ba3a": {
+            "type": "final_video",
+            "character": "Arjun",
+            "image_id": "",
+            "transition_id": "",
+            "status": "in_progress",
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\Arjun.mp4"
+        }
+    },
+    "event": {
+        "type": "INITIALIZE",
+        "payload": {
+            "episode_number": "s01_e09",
+            "server_name": "http://localhost:8188",
+            "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09"
+        }
+    }
+}

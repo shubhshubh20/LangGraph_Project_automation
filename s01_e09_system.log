@@ -1,180 +1,130 @@
-{"timestamp": "2026-04-13T03:38:12.321970", "thread": "MainThread", "level": "INFO", "message": "Starting system with episode number: s01_e09"}
-{"timestamp": "2026-04-13T03:38:12.321970", "thread": "MainThread", "level": "INFO", "message": "Graph initiated. Starting background workers..."}
-{"timestamp": "2026-04-13T03:38:12.321970", "thread": "JobStatusPoller", "level": "INFO", "message": "Started polling thread to check job status every 10 seconds..."}
-{"timestamp": "2026-04-13T03:38:12.329055", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "INITIALIZE", "payload": {"episode_number": "s01_e09", "server_name": "http://localhost:8188", "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09"}}}
-{"timestamp": "2026-04-13T03:38:12.329055", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:12.399056", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "INITIALIZE", "payload": {"episode_number": "s01_e09", "server_name": "http://localhost:8188", "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09"}}}
-{"timestamp": "2026-04-13T03:38:12.399056", "thread": "StateWorker", "level": "INFO", "message": "Waiting for Telegram bot to start before initializing state..."}
-{"timestamp": "2026-04-13T03:38:13.022982", "thread": "TelegramBot", "level": "INFO", "message": "\ud83e\udd16 Bot running..."}
-{"timestamp": "2026-04-13T03:38:14.337588", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:14.337588", "thread": "JobStatusPoller", "level": "INFO", "message": "state.json not found"}
-{"timestamp": "2026-04-13T03:38:16.344565", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:16.344565", "thread": "JobStatusPoller", "level": "INFO", "message": "state.json not found"}
-{"timestamp": "2026-04-13T03:38:17.412288", "thread": "StateWorker", "level": "INFO", "message": "Initializing state with input JSON..."}
-{"timestamp": "2026-04-13T03:38:17.447603", "thread": "StateWorker", "level": "INFO", "message": "State initialized."}
-{"timestamp": "2026-04-13T03:38:17.447603", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:18.346416", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:18.354563", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:19.510928", "thread": "StateWorker", "level": "INFO", "message": "Creating image job with comfy ui"}
-{"timestamp": "2026-04-13T03:38:19.510928", "thread": "StateWorker", "level": "INFO", "message": "Image Job created, updating state..."}
-{"timestamp": "2026-04-13T03:38:19.510928", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:20.360271", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:20.369642", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:20.369642", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job, checking status..."}
-{"timestamp": "2026-04-13T03:38:20.369642", "thread": "JobStatusPoller", "level": "INFO", "message": "Checking job status for Image of Aditya with expression happy and pose standing with job id baa2b0ef-3725-455e-8eff-8e4ecaa52b0c..."}
-{"timestamp": "2026-04-13T03:38:22.409254", "thread": "JobStatusPoller", "level": "INFO", "message": "current status for baa2b0ef-3725-455e-8eff-8e4ecaa52b0c: success"}
-{"timestamp": "2026-04-13T03:38:22.413052", "thread": "JobStatusPoller", "level": "INFO", "message": "telegram request sent"}
-{"timestamp": "2026-04-13T03:38:22.413052", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "baa2b0ef-3725-455e-8eff-8e4ecaa52b0c"}}}
-{"timestamp": "2026-04-13T03:38:22.413052", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:22.413052", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "baa2b0ef-3725-455e-8eff-8e4ecaa52b0c"}}}
-{"timestamp": "2026-04-13T03:38:22.413052", "thread": "StateWorker", "level": "INFO", "message": "Telegram approval request sent for job baa2b0ef-3725-455e-8eff-8e4ecaa52b0c"}
-{"timestamp": "2026-04-13T03:38:22.413052", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:24.429121", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:24.429121", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:24.447641", "thread": "StateWorker", "level": "INFO", "message": "Creating image job with comfy ui"}
-{"timestamp": "2026-04-13T03:38:24.447641", "thread": "StateWorker", "level": "INFO", "message": "Image Job created, updating state..."}
-{"timestamp": "2026-04-13T03:38:24.448641", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:26.439656", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:26.439656", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:26.440681", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job, checking status..."}
-{"timestamp": "2026-04-13T03:38:26.440681", "thread": "JobStatusPoller", "level": "INFO", "message": "Checking job status for Image of Aditya with expression thinking and pose walking with job id 02cb1b0b-f600-4c11-8efc-8c1cff54e804..."}
-{"timestamp": "2026-04-13T03:38:28.472324", "thread": "JobStatusPoller", "level": "INFO", "message": "current status for 02cb1b0b-f600-4c11-8efc-8c1cff54e804: success"}
-{"timestamp": "2026-04-13T03:38:28.507050", "thread": "JobStatusPoller", "level": "INFO", "message": "telegram request sent"}
-{"timestamp": "2026-04-13T03:38:28.507050", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "02cb1b0b-f600-4c11-8efc-8c1cff54e804"}}}
-{"timestamp": "2026-04-13T03:38:28.507050", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:28.507050", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "02cb1b0b-f600-4c11-8efc-8c1cff54e804"}}}
-{"timestamp": "2026-04-13T03:38:28.507050", "thread": "StateWorker", "level": "INFO", "message": "Telegram approval request sent for job 02cb1b0b-f600-4c11-8efc-8c1cff54e804"}
-{"timestamp": "2026-04-13T03:38:28.507050", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:30.521359", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:30.521359", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:30.552312", "thread": "StateWorker", "level": "INFO", "message": "Creating image job with comfy ui"}
-{"timestamp": "2026-04-13T03:38:30.552312", "thread": "StateWorker", "level": "INFO", "message": "Image Job created, updating state..."}
-{"timestamp": "2026-04-13T03:38:30.553313", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:30.660748", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] APPROVE for job baa2b0ef-3725-455e-8eff-8e4ecaa52b0c"}
-{"timestamp": "2026-04-13T03:38:30.660748", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] Job baa2b0ef-3725-455e-8eff-8e4ecaa52b0c APPROVED"}
-{"timestamp": "2026-04-13T03:38:30.661752", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "baa2b0ef-3725-455e-8eff-8e4ecaa52b0c"}}}
-{"timestamp": "2026-04-13T03:38:30.661752", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:30.663750", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "baa2b0ef-3725-455e-8eff-8e4ecaa52b0c"}}}
-{"timestamp": "2026-04-13T03:38:30.664750", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job baa2b0ef-3725-455e-8eff-8e4ecaa52b0c"}
-{"timestamp": "2026-04-13T03:38:30.664750", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:30.671720", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:32.527552", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:32.527552", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:32.527552", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job, checking status..."}
-{"timestamp": "2026-04-13T03:38:32.527552", "thread": "JobStatusPoller", "level": "INFO", "message": "Checking job status for Image of Aditya with expression calm and pose hands_folded with job id 09aaacca-e279-4008-9be0-50fd54b33cda..."}
-{"timestamp": "2026-04-13T03:38:34.555696", "thread": "JobStatusPoller", "level": "INFO", "message": "current status for 09aaacca-e279-4008-9be0-50fd54b33cda: success"}
-{"timestamp": "2026-04-13T03:38:34.556696", "thread": "JobStatusPoller", "level": "INFO", "message": "telegram request sent"}
-{"timestamp": "2026-04-13T03:38:34.557694", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "09aaacca-e279-4008-9be0-50fd54b33cda"}}}
-{"timestamp": "2026-04-13T03:38:34.557694", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:34.558692", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "09aaacca-e279-4008-9be0-50fd54b33cda"}}}
-{"timestamp": "2026-04-13T03:38:34.558692", "thread": "StateWorker", "level": "INFO", "message": "Telegram approval request sent for job 09aaacca-e279-4008-9be0-50fd54b33cda"}
-{"timestamp": "2026-04-13T03:38:34.558692", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:34.561429", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:36.560193", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:36.560193", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:37.625347", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] APPROVE for job 02cb1b0b-f600-4c11-8efc-8c1cff54e804"}
-{"timestamp": "2026-04-13T03:38:37.625347", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] Job 02cb1b0b-f600-4c11-8efc-8c1cff54e804 APPROVED"}
-{"timestamp": "2026-04-13T03:38:37.625347", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "02cb1b0b-f600-4c11-8efc-8c1cff54e804"}}}
-{"timestamp": "2026-04-13T03:38:37.625347", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:37.625347", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "02cb1b0b-f600-4c11-8efc-8c1cff54e804"}}}
-{"timestamp": "2026-04-13T03:38:37.625347", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 02cb1b0b-f600-4c11-8efc-8c1cff54e804"}
-{"timestamp": "2026-04-13T03:38:37.641303", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:38.574539", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:38.574539", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:39.808853", "thread": "StateWorker", "level": "INFO", "message": "Creating image job with comfy ui"}
-{"timestamp": "2026-04-13T03:38:39.808853", "thread": "StateWorker", "level": "INFO", "message": "Transition Job created, updating state..."}
-{"timestamp": "2026-04-13T03:38:39.808853", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:40.590103", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:40.590103", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:40.590103", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job, checking status..."}
-{"timestamp": "2026-04-13T03:38:40.590103", "thread": "JobStatusPoller", "level": "INFO", "message": "Checking job status for Transition video from happy and pose standing to                                      thinking and pose walking for character Aditya with job id cebb4581-980d-4e92-9fdc-fb4b33359123..."}
-{"timestamp": "2026-04-13T03:38:42.624678", "thread": "JobStatusPoller", "level": "INFO", "message": "current status for cebb4581-980d-4e92-9fdc-fb4b33359123: success"}
-{"timestamp": "2026-04-13T03:38:42.632965", "thread": "JobStatusPoller", "level": "INFO", "message": "telegram request sent"}
-{"timestamp": "2026-04-13T03:38:42.632965", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "cebb4581-980d-4e92-9fdc-fb4b33359123"}}}
-{"timestamp": "2026-04-13T03:38:42.632965", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:42.632965", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "cebb4581-980d-4e92-9fdc-fb4b33359123"}}}
-{"timestamp": "2026-04-13T03:38:42.632965", "thread": "StateWorker", "level": "INFO", "message": "Telegram approval request sent for job cebb4581-980d-4e92-9fdc-fb4b33359123"}
-{"timestamp": "2026-04-13T03:38:42.632965", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:42.641033", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:43.373370", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] APPROVE for job 09aaacca-e279-4008-9be0-50fd54b33cda"}
-{"timestamp": "2026-04-13T03:38:43.373370", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] Job 09aaacca-e279-4008-9be0-50fd54b33cda APPROVED"}
-{"timestamp": "2026-04-13T03:38:43.373370", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "09aaacca-e279-4008-9be0-50fd54b33cda"}}}
-{"timestamp": "2026-04-13T03:38:43.373370", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:43.373370", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "09aaacca-e279-4008-9be0-50fd54b33cda"}}}
-{"timestamp": "2026-04-13T03:38:43.373370", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 09aaacca-e279-4008-9be0-50fd54b33cda"}
-{"timestamp": "2026-04-13T03:38:43.373370", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:44.638664", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:44.638664", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:45.402866", "thread": "StateWorker", "level": "INFO", "message": "Creating image job with comfy ui"}
-{"timestamp": "2026-04-13T03:38:45.402866", "thread": "StateWorker", "level": "INFO", "message": "Transition Job created, updating state..."}
-{"timestamp": "2026-04-13T03:38:45.403860", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:46.646993", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:46.647377", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:46.647377", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job, checking status..."}
-{"timestamp": "2026-04-13T03:38:46.647377", "thread": "JobStatusPoller", "level": "INFO", "message": "Checking job status for Transition video from thinking and pose walking to                                      calm and pose hands_folded for character Aditya with job id 3b6f442d-d2a3-4963-a7b5-83628baa864c..."}
-{"timestamp": "2026-04-13T03:38:48.677551", "thread": "JobStatusPoller", "level": "INFO", "message": "current status for 3b6f442d-d2a3-4963-a7b5-83628baa864c: success"}
-{"timestamp": "2026-04-13T03:38:48.713182", "thread": "JobStatusPoller", "level": "INFO", "message": "telegram request sent"}
-{"timestamp": "2026-04-13T03:38:48.713182", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "3b6f442d-d2a3-4963-a7b5-83628baa864c"}}}
-{"timestamp": "2026-04-13T03:38:48.713182", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:48.713182", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "3b6f442d-d2a3-4963-a7b5-83628baa864c"}}}
-{"timestamp": "2026-04-13T03:38:48.713182", "thread": "StateWorker", "level": "INFO", "message": "Telegram approval request sent for job 3b6f442d-d2a3-4963-a7b5-83628baa864c"}
-{"timestamp": "2026-04-13T03:38:48.720258", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:48.724273", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:48.862409", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] APPROVE for job cebb4581-980d-4e92-9fdc-fb4b33359123"}
-{"timestamp": "2026-04-13T03:38:48.862409", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] Job cebb4581-980d-4e92-9fdc-fb4b33359123 APPROVED"}
-{"timestamp": "2026-04-13T03:38:48.862409", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "cebb4581-980d-4e92-9fdc-fb4b33359123"}}}
-{"timestamp": "2026-04-13T03:38:48.862409", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:48.862409", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "cebb4581-980d-4e92-9fdc-fb4b33359123"}}}
-{"timestamp": "2026-04-13T03:38:48.862409", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job cebb4581-980d-4e92-9fdc-fb4b33359123"}
-{"timestamp": "2026-04-13T03:38:48.862409", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:48.862409", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:50.727042", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:50.727042", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:52.742347", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:52.742347", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:54.745988", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:54.745988", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:55.009034", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] APPROVE for job 3b6f442d-d2a3-4963-a7b5-83628baa864c"}
-{"timestamp": "2026-04-13T03:38:55.009364", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] Job 3b6f442d-d2a3-4963-a7b5-83628baa864c APPROVED"}
-{"timestamp": "2026-04-13T03:38:55.009364", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "3b6f442d-d2a3-4963-a7b5-83628baa864c"}}}
-{"timestamp": "2026-04-13T03:38:55.009364", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:38:55.009364", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "3b6f442d-d2a3-4963-a7b5-83628baa864c"}}}
-{"timestamp": "2026-04-13T03:38:55.009364", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 3b6f442d-d2a3-4963-a7b5-83628baa864c"}
-{"timestamp": "2026-04-13T03:38:55.009364", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:56.754488", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:56.754488", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:57.058260", "thread": "StateWorker", "level": "INFO", "message": "Creating final complete video for Aditya with comfy ui"}
-{"timestamp": "2026-04-13T03:38:57.058260", "thread": "StateWorker", "level": "INFO", "message": "Final video Job created, updating state..."}
-{"timestamp": "2026-04-13T03:38:57.074202", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:38:58.758485", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:38:58.758485", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:38:58.758485", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job, checking status..."}
-{"timestamp": "2026-04-13T03:38:58.758485", "thread": "JobStatusPoller", "level": "INFO", "message": "Checking job status for Final video for character Aditya with job id 62aedcbe-4815-4352-8b6a-56ed6af59873..."}
-{"timestamp": "2026-04-13T03:39:00.796059", "thread": "JobStatusPoller", "level": "INFO", "message": "current status for 62aedcbe-4815-4352-8b6a-56ed6af59873: success"}
-{"timestamp": "2026-04-13T03:39:00.796059", "thread": "JobStatusPoller", "level": "INFO", "message": "telegram request sent"}
-{"timestamp": "2026-04-13T03:39:00.796059", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "62aedcbe-4815-4352-8b6a-56ed6af59873"}}}
-{"timestamp": "2026-04-13T03:39:00.796059", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:39:00.796059", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "JOB_TELEGRAM_REQUEST_EVENT", "payload": {"job_id": "62aedcbe-4815-4352-8b6a-56ed6af59873"}}}
-{"timestamp": "2026-04-13T03:39:00.796059", "thread": "StateWorker", "level": "INFO", "message": "Telegram approval request sent for job 62aedcbe-4815-4352-8b6a-56ed6af59873"}
-{"timestamp": "2026-04-13T03:39:00.796059", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:39:00.796059", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:39:02.812935", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:39:02.812935", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:39:04.816040", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:39:04.816040", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:39:06.826940", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:39:06.826940", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:39:08.835808", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:39:08.836579", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:39:10.848870", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:39:10.848870", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
-{"timestamp": "2026-04-13T03:39:11.398283", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] APPROVE for job 62aedcbe-4815-4352-8b6a-56ed6af59873"}
-{"timestamp": "2026-04-13T03:39:11.398283", "thread": "TelegramBot", "level": "INFO", "message": "[EVENT] Job 62aedcbe-4815-4352-8b6a-56ed6af59873 APPROVED"}
-{"timestamp": "2026-04-13T03:39:11.398283", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "62aedcbe-4815-4352-8b6a-56ed6af59873"}}}
-{"timestamp": "2026-04-13T03:39:11.398283", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
-{"timestamp": "2026-04-13T03:39:11.399307", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "62aedcbe-4815-4352-8b6a-56ed6af59873"}}}
-{"timestamp": "2026-04-13T03:39:11.400284", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 62aedcbe-4815-4352-8b6a-56ed6af59873"}
-{"timestamp": "2026-04-13T03:39:11.400284", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:39:11.405433", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
-{"timestamp": "2026-04-13T03:39:12.851681", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
-{"timestamp": "2026-04-13T03:39:12.851681", "thread": "JobStatusPoller", "level": "INFO", "message": "file found"}
+{"timestamp": "2026-04-13T17:12:52.703972", "thread": "JobStatusPoller", "level": "INFO", "message": "Started polling thread to check job status every 2 seconds..."}
+{"timestamp": "2026-04-13T17:12:52.734525", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "INITIALIZE", "payload": {"episode_number": "s01_e09", "server_name": "http://localhost:8188", "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09"}}}
+{"timestamp": "2026-04-13T17:12:52.735524", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:12:52.748654", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "INITIALIZE", "payload": {"episode_number": "s01_e09", "server_name": "http://localhost:8188", "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09"}}}
+{"timestamp": "2026-04-13T17:12:54.726531", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:12:56.733082", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:12:57.761334", "thread": "StateWorker", "level": "INFO", "message": "Initializing state with input JSON..."}
+{"timestamp": "2026-04-13T17:12:57.761334", "thread": "StateWorker", "level": "INFO", "message": "State initialized."}
+{"timestamp": "2026-04-13T17:12:57.761334", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:12:57.765865", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:12:58.748399", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:12:59.812841", "thread": "StateWorker", "level": "INFO", "message": "Creating image job image_1 with comfy ui"}
+{"timestamp": "2026-04-13T17:12:59.812841", "thread": "StateWorker", "level": "INFO", "message": "Image Job created, updating state..."}
+{"timestamp": "2026-04-13T17:12:59.812841", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:00.755246", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:00.755246", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress jobac3863d1-12d3-46e4-a2b4-f469ec6f7cb4, checking status..."}
+{"timestamp": "2026-04-13T17:13:02.788997", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "ac3863d1-12d3-46e4-a2b4-f469ec6f7cb4"}}}
+{"timestamp": "2026-04-13T17:13:02.788997", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:02.788997", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "ac3863d1-12d3-46e4-a2b4-f469ec6f7cb4"}}}
+{"timestamp": "2026-04-13T17:13:02.788997", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job ac3863d1-12d3-46e4-a2b4-f469ec6f7cb4"}
+{"timestamp": "2026-04-13T17:13:02.788997", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:02.788997", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:04.795713", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:04.853469", "thread": "StateWorker", "level": "INFO", "message": "Creating image job image_2 with comfy ui"}
+{"timestamp": "2026-04-13T17:13:04.853469", "thread": "StateWorker", "level": "INFO", "message": "Image Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:04.855688", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:06.811392", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:06.811392", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress jobe2888252-5037-4f05-8f62-0386f9afb785, checking status..."}
+{"timestamp": "2026-04-13T17:13:08.854455", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "e2888252-5037-4f05-8f62-0386f9afb785"}}}
+{"timestamp": "2026-04-13T17:13:08.854455", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:08.854455", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "e2888252-5037-4f05-8f62-0386f9afb785"}}}
+{"timestamp": "2026-04-13T17:13:08.854455", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job e2888252-5037-4f05-8f62-0386f9afb785"}
+{"timestamp": "2026-04-13T17:13:08.854455", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:08.854455", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:10.871015", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:10.918669", "thread": "StateWorker", "level": "INFO", "message": "Creating image job image_3 with comfy ui"}
+{"timestamp": "2026-04-13T17:13:10.918669", "thread": "StateWorker", "level": "INFO", "message": "Image Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:10.918669", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:12.886544", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:12.886544", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job13bffc3a-df12-4e08-92a1-6e212355f85c, checking status..."}
+{"timestamp": "2026-04-13T17:13:14.916691", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "13bffc3a-df12-4e08-92a1-6e212355f85c"}}}
+{"timestamp": "2026-04-13T17:13:14.916691", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:14.916691", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "13bffc3a-df12-4e08-92a1-6e212355f85c"}}}
+{"timestamp": "2026-04-13T17:13:14.916691", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 13bffc3a-df12-4e08-92a1-6e212355f85c"}
+{"timestamp": "2026-04-13T17:13:14.916691", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:14.932335", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:16.926799", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:16.999505", "thread": "StateWorker", "level": "INFO", "message": "Creating image job image_4 with comfy ui"}
+{"timestamp": "2026-04-13T17:13:16.999505", "thread": "StateWorker", "level": "INFO", "message": "Image Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:16.999505", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:18.935989", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:18.935989", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress jobf801f167-f27d-43c1-87ed-6a849fb9d48e, checking status..."}
+{"timestamp": "2026-04-13T17:13:20.982810", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "f801f167-f27d-43c1-87ed-6a849fb9d48e"}}}
+{"timestamp": "2026-04-13T17:13:20.982810", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:20.982810", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "f801f167-f27d-43c1-87ed-6a849fb9d48e"}}}
+{"timestamp": "2026-04-13T17:13:20.982810", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job f801f167-f27d-43c1-87ed-6a849fb9d48e"}
+{"timestamp": "2026-04-13T17:13:20.982810", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:20.998839", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:22.991429", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:23.061162", "thread": "StateWorker", "level": "INFO", "message": "Creating image job image_5 with comfy ui"}
+{"timestamp": "2026-04-13T17:13:23.061162", "thread": "StateWorker", "level": "INFO", "message": "Image Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:23.061162", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:25.006638", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:25.006638", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job2905af60-92a3-42e3-901a-e64af205db15, checking status..."}
+{"timestamp": "2026-04-13T17:13:27.061923", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "2905af60-92a3-42e3-901a-e64af205db15"}}}
+{"timestamp": "2026-04-13T17:13:27.061923", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:27.061923", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "2905af60-92a3-42e3-901a-e64af205db15"}}}
+{"timestamp": "2026-04-13T17:13:27.061923", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 2905af60-92a3-42e3-901a-e64af205db15"}
+{"timestamp": "2026-04-13T17:13:27.061923", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:27.061923", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:29.071233", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:29.115475", "thread": "StateWorker", "level": "INFO", "message": "Creating transition job image_1 to image_2 with comfy ui"}
+{"timestamp": "2026-04-13T17:13:29.115475", "thread": "StateWorker", "level": "INFO", "message": "Transition Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:29.115475", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:31.073836", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:31.073836", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress jobfd33eaed-9096-4745-80a6-88c584415360, checking status..."}
+{"timestamp": "2026-04-13T17:13:33.128859", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "fd33eaed-9096-4745-80a6-88c584415360"}}}
+{"timestamp": "2026-04-13T17:13:33.128859", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:33.128859", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "fd33eaed-9096-4745-80a6-88c584415360"}}}
+{"timestamp": "2026-04-13T17:13:33.128859", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job fd33eaed-9096-4745-80a6-88c584415360"}
+{"timestamp": "2026-04-13T17:13:33.128859", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:33.140967", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:35.144938", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:35.207363", "thread": "StateWorker", "level": "INFO", "message": "Creating transition job image_2 to image_3 with comfy ui"}
+{"timestamp": "2026-04-13T17:13:35.207363", "thread": "StateWorker", "level": "INFO", "message": "Transition Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:35.209110", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:37.153363", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:37.154573", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job8978124e-af74-431b-ba45-b12799c81ade, checking status..."}
+{"timestamp": "2026-04-13T17:13:39.181888", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "8978124e-af74-431b-ba45-b12799c81ade"}}}
+{"timestamp": "2026-04-13T17:13:39.181888", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:39.183886", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "8978124e-af74-431b-ba45-b12799c81ade"}}}
+{"timestamp": "2026-04-13T17:13:39.184733", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 8978124e-af74-431b-ba45-b12799c81ade"}
+{"timestamp": "2026-04-13T17:13:39.186290", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:39.194322", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:41.190679", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:41.239901", "thread": "StateWorker", "level": "INFO", "message": "Creating transition job image_3 to image_4 with comfy ui"}
+{"timestamp": "2026-04-13T17:13:41.239901", "thread": "StateWorker", "level": "INFO", "message": "Transition Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:41.239901", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:43.204050", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:43.204050", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job4f5775a9-d3ce-490a-861f-0cc4c6ee9fb4, checking status..."}
+{"timestamp": "2026-04-13T17:13:45.232771", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "4f5775a9-d3ce-490a-861f-0cc4c6ee9fb4"}}}
+{"timestamp": "2026-04-13T17:13:45.232771", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:45.240337", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "4f5775a9-d3ce-490a-861f-0cc4c6ee9fb4"}}}
+{"timestamp": "2026-04-13T17:13:45.240337", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 4f5775a9-d3ce-490a-861f-0cc4c6ee9fb4"}
+{"timestamp": "2026-04-13T17:13:45.242345", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:45.255435", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:47.243176", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:47.316426", "thread": "StateWorker", "level": "INFO", "message": "Creating transition job image_4 to image_5 with comfy ui"}
+{"timestamp": "2026-04-13T17:13:47.316426", "thread": "StateWorker", "level": "INFO", "message": "Transition Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:47.316426", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:49.249561", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:49.249561", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress jobb3973712-9d10-41d8-8532-2968e3f59dc9, checking status..."}
+{"timestamp": "2026-04-13T17:13:51.290215", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "b3973712-9d10-41d8-8532-2968e3f59dc9"}}}
+{"timestamp": "2026-04-13T17:13:51.290215", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:51.292213", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "b3973712-9d10-41d8-8532-2968e3f59dc9"}}}
+{"timestamp": "2026-04-13T17:13:51.292213", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job b3973712-9d10-41d8-8532-2968e3f59dc9"}
+{"timestamp": "2026-04-13T17:13:51.293212", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:53.297303", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:55.015074", "thread": "StateWorker", "level": "INFO", "message": "Creating final complete video for Arjun with comfy ui"}
+{"timestamp": "2026-04-13T17:13:55.015074", "thread": "StateWorker", "level": "INFO", "message": "Final video Job created, updating state..."}
+{"timestamp": "2026-04-13T17:13:55.031008", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:55.308978", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}
+{"timestamp": "2026-04-13T17:13:55.308978", "thread": "JobStatusPoller", "level": "INFO", "message": "found in progress job3cf7deee-6633-4d6e-bc15-ae4bf879b7ff, checking status..."}
+{"timestamp": "2026-04-13T17:13:57.342303", "thread": "StateWorker", "level": "INFO", "message": "Event Enqueued", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "3cf7deee-6633-4d6e-bc15-ae4bf879b7ff"}}}
+{"timestamp": "2026-04-13T17:13:57.343468", "thread": "StateWorker", "level": "INFO", "message": "graph invoked"}
+{"timestamp": "2026-04-13T17:13:57.345175", "thread": "StateWorker", "level": "INFO", "message": "Updating state with event", "event": {"type": "TELEGRAM_APPROVE_EVENT", "payload": {"job_id": "3cf7deee-6633-4d6e-bc15-ae4bf879b7ff"}}}
+{"timestamp": "2026-04-13T17:13:57.345577", "thread": "StateWorker", "level": "INFO", "message": "Received Telegram approval for job 3cf7deee-6633-4d6e-bc15-ae4bf879b7ff"}
+{"timestamp": "2026-04-13T17:13:57.345577", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:57.354600", "thread": "StateWorker", "level": "INFO", "message": "Persisting state to state.json"}
+{"timestamp": "2026-04-13T17:13:59.346360", "thread": "JobStatusPoller", "level": "INFO", "message": "Polling for job status updates..."}

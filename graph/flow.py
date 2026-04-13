@@ -50,7 +50,7 @@ def update_state(state: RootState) -> RootState:
     if event and event["type"] == "INITIALIZE":
         ##making sure that telegram bot is up and running before we initialize the state, 
         # so that we can send the approval/rejection messages to telegram without any issues.
-        log_event("Waiting for Telegram bot to start before initializing state...")
+        # log_event("Waiting for Telegram bot to start before initializing state...")
         time.sleep(5)  
         # 
         # 
@@ -58,7 +58,7 @@ def update_state(state: RootState) -> RootState:
             with open('state.json', 'r') as f:
                 data = json.load(f)
             new_state = cast(RootState, data)
-            log_event("state.json already exists, loading state...")
+            # log_event("state.json already exists, loading state...")
         except FileNotFoundError: 
             log_event("Initializing state with input JSON...")
             new_state = get_input_json(event)
@@ -154,7 +154,6 @@ def create_next_job(state: RootState) -> RootState:
             character_staging_loc = staging_location / char_key
             character_staging_loc.mkdir(parents=True, exist_ok=True)
             outfit = char_data["outfit"]
-            posture = char_data["posture"]
             for img_key, img_data in char_data["images"].items():
                 if img_data["status"] == "pending" or img_data["status"] == "rejected":
                     # TODO: decide on the final output path stucture for the image
@@ -163,10 +162,10 @@ def create_next_job(state: RootState) -> RootState:
 
                     job_id = create_image_job(
                         server_name, 
+                        staging_location,
                         char_key,
                         img_key,
                         outfit,
-                        posture,
                         img_data
                     )
 
@@ -198,16 +197,17 @@ def create_next_job(state: RootState) -> RootState:
             character_staging_loc = staging_location / char_key
             character_staging_loc.mkdir(parents=True, exist_ok=True)
             outfit = char_data["outfit"]
-            posture = char_data["posture"]
             for transition_key, transition_data in char_data["transitions"].items():
                 if (transition_data["status"] == "pending" or transition_data["status"] == "rejected") and char_data["images"][transition_data["from_image"]]["status"] == "approved" and char_data["images"][transition_data["to_image"]]["status"] == "approved":
                     
-                    output_path = f'{(character_staging_loc / transition_key).__str__()}.mp4'
+                    output_path = f'{(character_staging_loc / transition_key).__str__()}.webp'
                     transition_data["output_path"] = output_path
 
                     job_id = create_transition_video_job(
                         server_name, 
+                        staging_location,
                         char_key,
+                        transition_key,
                         char_data["images"][transition_data["from_image"]],
                         char_data["images"][transition_data["to_image"]],
                         transition_data
@@ -243,7 +243,7 @@ def create_next_job(state: RootState) -> RootState:
             if final_video and (final_video["status"] == "pending" or final_video["status"] == "rejected") and all(transition_data["status"] == "approved" for transition_data in char_data["transitions"].values()):
                 output_path = f'{(character_staging_loc / char_key).__str__()}.mp4'
                 final_video["output_path"] = output_path
-                job_id = create_final_video_job(server_name, char_key, char_data["transitions"])
+                job_id = create_final_video_job(server_name, staging_location,char_key, char_data["transitions"])
                 state["jobs"][job_id] = {
                     "type": "final_video",
                     "character": char_key,

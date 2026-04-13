@@ -1,10 +1,23 @@
 import json
+import os
 from pathlib import Path
+import time
 import requests
 from demo_logger.json_logger import log_event
 from core.state import TransitionState
 
+
+def safe_replace(src, dst, retries=5):
+    for i in range(retries):
+        try:
+            os.replace(src, dst)
+            return
+        except PermissionError:
+            time.sleep(0.1)
+    raise
+
 def create_final_video_job(server_name: str, 
+                           staging_location: Path,
                            character: str, 
                             transition_state_list: dict[str, TransitionState]) -> str:
     
@@ -19,6 +32,9 @@ def create_final_video_job(server_name: str,
 
     with open(file_path, "r") as f:
         workflow_test = json.load(f)
+
+    with open(base_dir / "workflow_apis" / "video_combine_api.json", "r") as f:
+        workflow = json.load(f)
 
     count = 0
     base_id = 100  # safer than 8 (avoid conflicts)
@@ -50,50 +66,18 @@ def create_final_video_job(server_name: str,
         }
 
         workflow_test["9"]["inputs"][f"image_{count+1}"] = [node_id, 0]
-        count=+1
-    # TODO: update the workflow to get required inputs
+        count = count + 1
 
     # total_vidoes = len(transition_state_list)
 
-    #TODO: dynamically change the workflow json file to get multiple inputs from the system
+    with open(staging_location / "test_workflow_api" / f'{character}_final.tmp', 'w') as f:
+        json.dump(workflow_test, f, indent=4)
 
-    # Following code is directly used from chatgpt change that in order to get proper workflow
-
-    # import json
-
-    # files = [
-    #     "naina_transition_1.webp",
-    #     "naina_transition_2.webp",
-    #     "naina_transition_3.webp",
-    #     "naina_transition_4.webp"
-    # ]
-
-    # with open("video_combine_api.json") as f:
-    #     workflow = json.load(f)["prompt"]
-
-    # # Clear old images
-    # workflow["7"]["inputs"] = {"inputcount": len(files)}
-
-    # # Remove old LoadImage nodes (optional clean)
-    # for key in list(workflow.keys()):
-    #     if workflow[key]["class_type"] == "LoadImage":
-    #         del workflow[key]
-
-    # # Add new nodes
-    # base_id = 100  # safer than 8 (avoid conflicts)
-
-    # for i, file in enumerate(files):
-    #     node_id = str(base_id + i)
-
-    #     workflow[node_id] = {
-    #         "inputs": {"image": file},
-    #         "class_type": "LoadImage",
-    #         "_meta": {"title": "Load Image"}
-    #     }
-
-    #     workflow["7"]["inputs"][f"image_{i+1}"] = [node_id, 0]
+    safe_replace(staging_location / "test_workflow_api" / f'{character}_final.tmp', staging_location / "test_workflow_api" / f'{character}_final.json')
 
 
+    print("final workflow for video creation:")
+    print({"prompt": workflow_test})
     res = requests.post(url, json={"prompt": workflow_test}).json()
     print(res)
     job_id = res["prompt_id"]

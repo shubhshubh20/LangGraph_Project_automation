@@ -112,7 +112,6 @@ async def handle_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     action, job_id = query.data.split("_")
 
-    log_event(f"[EVENT] {action.upper()} for job {job_id}")
 
     if action == "approve":
         response = f"✅ Job {job_id} approved"
@@ -192,7 +191,6 @@ def main(episode_number:str, server_name:str, staging_location:str):
     app.post_init = post_init
     # app.post_init = lambda app: asyncio.create_task(telegram_worker(app))
 
-    log_event("🤖 Bot running...")
     app.run_polling()
 
     

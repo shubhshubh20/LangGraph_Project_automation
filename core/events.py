@@ -29,7 +29,6 @@ def get_input_json(event: Event) -> RootState:
     for char_key, char_data in data['characters'].items():
         # from data create ImageState first and then CharacterState and then RootState
         outfit = char_data["outfit"]
-        posture = char_data["posture"]
         image_states = {}
         for img_key, img_data in char_data['images'].items():
             image_state: ImageState = {
@@ -38,8 +37,8 @@ def get_input_json(event: Event) -> RootState:
                 "expression": img_data["expression"],
                 "pose_prompt": img_data["pose_prompt"],
                 "pose": img_data["pose"],
-                "from_time": img_data["from_time"],
-                "to_time": img_data["to_time"],
+                "time": img_data["time"],
+                "camera_angle": img_data["camera_angle"],
                 "status": "pending",
                 "prompt_id": None,
                 "output_path": None
@@ -53,9 +52,11 @@ def get_input_json(event: Event) -> RootState:
         for i in range(len(sorted_images) - 1):
             from_img_key, from_img_data = sorted_images[i]
             to_img_key, to_img_data = sorted_images[i + 1]
+            transition_key = f"{from_img_key}_to_{to_img_key}"
             transition_state: TransitionState = {
                 "from_image": from_img_key,
                 "to_image": to_img_key,
+                "prompt": char_data["transitions"][transition_key]["prompt"],
                 "status": "pending",
                 "prompt_id": None,
                 "output_path": None
@@ -71,7 +72,6 @@ def get_input_json(event: Event) -> RootState:
 
         character_state: CharacterState = {
             "outfit": outfit,
-            "posture": posture,
             "images": image_states,
             "transitions": transition_states,
             "final_video": final_video_state

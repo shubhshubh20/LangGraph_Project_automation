@@ -13,43 +13,47 @@ comfyui_output_path = Path("D:\\Comfy_UI\\ComfyUI_windows_portable_nvidia\\Comfy
 def check_job_status(server_name: str, key: str, name: str, output_path: str,
                      isImage=False):
     #randomly update the job status to completed, in_progress or failed for testing
-    log_event(f"Checking job status for {name} with job id {key}...")
 
 
     #TODO: replace this with actual API call to comfy ui to check job status using prompt_id and update the state accordingly
     url = f'{server_name}/history/{key}'
     res = requests.get(url).json()
-    status = res[key]["status"]["status_str"]
-    log_event(f"current status for {key}: {status}")
+    if res and res.get(key):
+        status = res[key]["status"]["status_str"]
 
 
-    # import random
-    # progress = random.choice(["in_progress", "completed", "failed"])
-    # log_event(f"Checked job status for {job['type']} of character {job['character']}, new status: {job['status']}")
-    if status in ["success"]:
-        if isImage:
-            saved_image_file_name = res[key]["outputs"]["10"]["images"][0]["filename"]
-        else:
-            saved_image_file_name = res[key]["outputs"]["7"]["gifs"][0]["filename"]
-        safe_replace((comfyui_output_path / saved_image_file_name).__str__(), output_path)
-        # send_telegram_request(job)
-        event_queue.put({
-            "type": "JOB_TELEGRAM_REQUEST_EVENT", 
-            "payload": {
-                "job_id": key
-            }
-        })
-        if isImage:
-            send_approval_request(key, name, output_path, isImage=True)
-        else:
-            send_approval_request(key, name, output_path)
-        log_event(f"telegram request sent")
-    elif status in ["error"]:
-        event_queue.put({
-            "type": "JOB_FAILED_EVENT", 
-            "payload": {
-                "job_id": key
-            }})
+        # import random
+        # progress = random.choice(["in_progress", "completed", "failed"])
+        # log_event(f"Checked job status for {job['type']} of character {job['character']}, new status: {job['status']}")
+        if status in ["success"]:
+            if isImage:
+                saved_image_file_name = res[key]["outputs"]["10"]["images"][0]["filename"]
+            else:
+                saved_image_file_name = res[key]["outputs"]["7"]["gifs"][0]["filename"]
+            safe_replace((comfyui_output_path / saved_image_file_name).__str__(), output_path)
+            # event_queue.put({
+            #     "type": "JOB_TELEGRAM_REQUEST_EVENT", 
+            #     "payload": {
+            #         "job_id": key
+            #     }
+            # })
+            event_queue.put({
+                "type": "TELEGRAM_APPROVE_EVENT",
+                "payload": {
+                    "job_id": key
+                }
+            })
+            # if isImage:
+            #     send_approval_request(key, name, output_path, isImage=True)
+            # else:
+            #     send_approval_request(key, name, output_path)
+            # log_event(f"telegram request sent")
+        elif status in ["error"]:
+            event_queue.put({
+                "type": "JOB_FAILED_EVENT", 
+                "payload": {
+                    "job_id": key
+                }})
 
 
 def should_terminate(state):
@@ -87,7 +91,7 @@ def should_terminate(state):
 
 def poll_job_status(server_name, shutdown_event):
 
-    log_event("Started polling thread to check job status every 10 seconds...")
+    log_event("Started polling thread to check job status every 2 seconds...")
 
     while True:
         time.sleep(2)
@@ -98,9 +102,9 @@ def poll_job_status(server_name, shutdown_event):
         try:
             with open('state.json', 'r') as f:
                 data = json.load(f)
-                log_event("file found")
+                # log_event("file found")
         except (FileNotFoundError, PermissionError):
-            log_event("state.json not found")
+            # log_event("state.json not found")
             continue
 
         if should_terminate(data):
@@ -112,7 +116,7 @@ def poll_job_status(server_name, shutdown_event):
         for key in data.get("jobs", {}).keys():
             job = data["jobs"][key]
             if job["status"] == "in_progress":
-                log_event("found in progress job, checking status...")
+                log_event(f"found in progress job{key}, checking status...")
                 #get image details from job and get expression and pose name from state using job details
                 character_name = job["character"]
                 if job["type"] == "image":

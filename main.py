@@ -29,12 +29,10 @@ if __name__ == "__main__":
             sys.exit(0)
 
 
-    log_event(f"Starting system with episode number: {episode_number}")
     
     # state_thread = threading.Thread(target=state_worker, daemon=True)
     # state_thread.start()
     shutdown_event = threading.Event()
-    log_event("Graph initiated. Starting background workers...")
     
     telegram_thread = threading.Thread(target=main, args=(episode_number, server_name, staging_location.__str__()), name="TelegramBot", daemon=True)
     telegram_thread.start()

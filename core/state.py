@@ -6,8 +6,8 @@ class ImageState(TypedDict):
     expression: str
     pose_prompt: str
     pose: str
-    from_time: float
-    to_time: float
+    time: float
+    camera_angle: str
     status: Literal["pending", "processing", "approved", "rejected"] 
     prompt_id: Optional[str]
     output_path: Optional[str]
@@ -15,6 +15,7 @@ class ImageState(TypedDict):
 class TransitionState(TypedDict):
     from_image: str
     to_image: str
+    prompt: str
     status: Literal["pending", "processing", "approved", "rejected"]
     prompt_id: Optional[str]
     output_path: Optional[str]
@@ -26,7 +27,6 @@ class FinalVideoState(TypedDict):
 
 class CharacterState(TypedDict):
     outfit: str
-    posture: Literal["standing", "sitting"]
     images: Dict[str, ImageState]
     transitions: Dict[str, TransitionState]
     final_video: FinalVideoState

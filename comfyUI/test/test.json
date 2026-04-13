@@ -3,7 +3,7 @@
     "inputs": {
       "frame_rate": 8,
       "loop_count": 0,
-      "filename_prefix": "AnimateDiff",
+      "filename_prefix": "Arjun",
       "format": "video/h264-mp4",
       "pix_fmt": "yuv420p",
       "crf": 19,
@@ -18,19 +18,18 @@
     },
     "class_type": "VHS_VideoCombine",
     "_meta": {
-      "title": "Video Combine 🎥🅥🅗🅢"
+      "title": "Video Combine ðŸŽ¥ðŸ…¥ðŸ…—ðŸ…¢"
     }
   },
   "9": {
     "inputs": {
-      "inputcount": 2,
-      "Update inputs": null,
+      "inputcount": 3,
       "image_1": [
-        "10",
+        "100",
         0
       ],
       "image_2": [
-        "11",
+        "101",
         0
       ]
     },
@@ -39,9 +38,9 @@
       "title": "Image Batch Multi"
     }
   },
-  "10": {
+  "100": {
     "inputs": {
-      "video": "image_2_to_image_3.mp4",
+      "video": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_1_to_image_2.mp4",
       "force_rate": 0,
       "custom_width": 0,
       "custom_height": 0,
@@ -52,12 +51,12 @@
     },
     "class_type": "VHS_LoadVideo",
     "_meta": {
-      "title": "Load Video (Upload) 🎥🅥🅗🅢"
+      "title": "Load Video (Upload) ðŸŽ¥🅥🅗🅢"
     }
   },
-  "11": {
+  "101": {
     "inputs": {
-      "video": "image_2_to_image_3.mp4",
+      "video": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Arjun\\image_3_to_image_4.mp4",
       "force_rate": 0,
       "custom_width": 0,
       "custom_height": 0,
@@ -68,7 +67,7 @@
     },
     "class_type": "VHS_LoadVideo",
     "_meta": {
-      "title": "Load Video (Upload) 🎥🅥🅗🅢"
+      "title": "Load Video (Upload) ðŸŽ¥🅥🅗🅢"
     }
   }
 }

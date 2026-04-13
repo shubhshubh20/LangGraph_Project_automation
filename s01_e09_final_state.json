@@ -1,7 +1,7 @@
 {
     "id": "s01_e09",
     "server_name": "http://localhost:8188",
-    "staging_location": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09",
+    "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09",
     "characters": {
         "Aditya": {
             "outfit": "",
@@ -16,8 +16,8 @@
                     "from_time": 0.0,
                     "to_time": 1.5,
                     "status": "approved",
-                    "prompt_id": "3a995b47-92ad-49dc-8615-f592aa3fe918",
-                    "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_1.png"
+                    "prompt_id": "baa2b0ef-3725-455e-8eff-8e4ecaa52b0c",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1.png"
                 },
                 "image_2": {
                     "index": 1,
@@ -28,8 +28,8 @@
                     "from_time": 1.5,
                     "to_time": 3.0,
                     "status": "approved",
-                    "prompt_id": "8e7b2ded-6cb1-4d12-9e2d-63a69f8d8e70",
-                    "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_2.png"
+                    "prompt_id": "02cb1b0b-f600-4c11-8efc-8c1cff54e804",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2.png"
                 },
                 "image_3": {
                     "index": 2,
@@ -40,8 +40,8 @@
                     "from_time": 3.0,
                     "to_time": 4.5,
                     "status": "approved",
-                    "prompt_id": "a8a36c61-5a03-4dda-aed0-3ff088270ccf",
-                    "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_3.png"
+                    "prompt_id": "09aaacca-e279-4008-9be0-50fd54b33cda",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_3.png"
                 }
             },
             "transitions": {
@@ -49,72 +49,72 @@
                     "from_image": "image_1",
                     "to_image": "image_2",
                     "status": "approved",
-                    "prompt_id": "abd4405f-837d-4735-bce7-12a8fbcd7f44",
-                    "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_1_to_image_2.webp"
+                    "prompt_id": "cebb4581-980d-4e92-9fdc-fb4b33359123",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1_to_image_2.mp4"
                 },
                 "image_2_to_image_3": {
                     "from_image": "image_2",
                     "to_image": "image_3",
                     "status": "approved",
-                    "prompt_id": "7620b22b-4e2a-4260-85cd-2e9b84aba611",
-                    "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_2_to_image_3.webp"
+                    "prompt_id": "3b6f442d-d2a3-4963-a7b5-83628baa864c",
+                    "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2_to_image_3.mp4"
                 }
             },
             "final_video": {
                 "status": "approved",
-                "prompt_id": "2d28d7dc-3c39-4b04-b9c5-561134911c19",
-                "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya.webp"
+                "prompt_id": "62aedcbe-4815-4352-8b6a-56ed6af59873",
+                "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
             }
         }
     },
     "jobs": {
-        "3a995b47-92ad-49dc-8615-f592aa3fe918": {
+        "baa2b0ef-3725-455e-8eff-8e4ecaa52b0c": {
             "type": "image",
             "character": "Aditya",
             "image_id": "image_1",
             "transition_id": "",
             "status": "completed",
-            "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_1.png"
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1.png"
         },
-        "8e7b2ded-6cb1-4d12-9e2d-63a69f8d8e70": {
+        "02cb1b0b-f600-4c11-8efc-8c1cff54e804": {
             "type": "image",
             "character": "Aditya",
             "image_id": "image_2",
             "transition_id": "",
             "status": "completed",
-            "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_2.png"
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2.png"
         },
-        "a8a36c61-5a03-4dda-aed0-3ff088270ccf": {
+        "09aaacca-e279-4008-9be0-50fd54b33cda": {
             "type": "image",
             "character": "Aditya",
             "image_id": "image_3",
             "transition_id": "",
             "status": "completed",
-            "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_3.png"
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_3.png"
         },
-        "abd4405f-837d-4735-bce7-12a8fbcd7f44": {
+        "cebb4581-980d-4e92-9fdc-fb4b33359123": {
             "type": "transition",
             "character": "Aditya",
             "image_id": "",
             "transition_id": "image_1_to_image_2",
             "status": "completed",
-            "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_1_to_image_2.webp"
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_1_to_image_2.mp4"
         },
-        "7620b22b-4e2a-4260-85cd-2e9b84aba611": {
+        "3b6f442d-d2a3-4963-a7b5-83628baa864c": {
             "type": "transition",
             "character": "Aditya",
             "image_id": "",
             "transition_id": "image_2_to_image_3",
             "status": "completed",
-            "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya\\image_2_to_image_3.webp"
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\image_2_to_image_3.mp4"
         },
-        "2d28d7dc-3c39-4b04-b9c5-561134911c19": {
+        "62aedcbe-4815-4352-8b6a-56ed6af59873": {
             "type": "final_video",
             "character": "Aditya",
             "image_id": "",
             "transition_id": "",
             "status": "completed",
-            "output_path": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09\\Aditya.webp"
+            "output_path": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Aditya\\Aditya.mp4"
         }
     },
     "event": {
@@ -122,7 +122,7 @@
         "payload": {
             "episode_number": "s01_e09",
             "server_name": "http://localhost:8188",
-            "staging_location": "D:\\youtube\\corner_table\\characters_dataset_for_new_creation\\staging_location\\s01_e09"
+            "staging_location": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09"
         }
     }
 }

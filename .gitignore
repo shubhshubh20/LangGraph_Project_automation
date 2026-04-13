@@ -4,6 +4,9 @@ __pycache__/
 build/
 dist/
 wheels/
+comfyUI/staging_loc/
+*_final_state.json
+*._system.log
 *.egg-info
 
 # Virtual environments

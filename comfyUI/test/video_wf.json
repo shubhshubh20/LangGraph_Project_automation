@@ -1,48 +1,9 @@
 {
   "id": "f831d2ae-8ed9-4b11-90ff-429dac28fa0f",
   "revision": 0,
-  "last_node_id": 9,
-  "last_link_id": 9,
+  "last_node_id": 11,
+  "last_link_id": 11,
   "nodes": [
-    {
-      "id": 4,
-      "type": "LoadImage",
-      "pos": [
-        792.9729019378174,
-        284.9180142297076
-      ],
-      "size": [
-        282.798828125,
-        314
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            7
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "Aditya01.png",
-        "image"
-      ]
-    },
     {
       "id": 9,
       "type": "ImageBatchMulti",
@@ -61,13 +22,13 @@
         {
           "name": "image_1",
           "type": "IMAGE",
-          "link": 7
+          "link": 10
         },
         {
           "name": "image_2",
           "shape": 7,
           "type": "IMAGE",
-          "link": 9
+          "link": 11
         }
       ],
       "outputs": [
@@ -87,45 +48,6 @@
       "widgets_values": [
         2,
         null
-      ]
-    },
-    {
-      "id": 6,
-      "type": "LoadImage",
-      "pos": [
-        792.9729019378175,
-        660.7925685815143
-      ],
-      "size": [
-        282.798828125,
-        314
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            9
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "Aditya01.png",
-        "image"
       ]
     },
     {
@@ -196,17 +118,179 @@
           "params": {}
         }
       }
+    },
+    {
+      "id": 10,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        662.2820665144825,
+        522.4161961136134
+      ],
+      "size": [
+        255.8291015625,
+        552.3298002919321
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "993082e4f2473bf4acaf06f51e33877a7eb38960",
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "image_2_to_image_3.mp4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "select_every_nth": 1,
+            "filename": "image_2_to_image_3.mp4",
+            "type": "input",
+            "format": "video/mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 11,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        656.0868022627743,
+        572.8490389480859
+      ],
+      "size": [
+        255.8291015625,
+        552.3298002919321
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11
+          ]
+        },
+        {
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "993082e4f2473bf4acaf06f51e33877a7eb38960",
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "image_2_to_image_3.mp4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "select_every_nth": 1,
+            "filename": "image_2_to_image_3.mp4",
+            "type": "input",
+            "format": "video/mp4"
+          }
+        }
+      }
     }
   ],
   "links": [
-    [
-      7,
-      4,
-      0,
-      9,
-      0,
-      "IMAGE"
-    ],
     [
       8,
       9,
@@ -216,8 +300,16 @@
       "IMAGE"
     ],
     [
+      10,
+      10,
+      0,
       9,
-      6,
+      0,
+      "IMAGE"
+    ],
+    [
+      11,
+      11,
       0,
       9,
       1,
@@ -229,10 +321,10 @@
   "extra": {
     "workflowRendererVersion": "LG",
     "ds": {
-      "scale": 1.1,
+      "scale": 0.6830134553650705,
       "offset": [
-        -505.62061172114295,
-        -151.1763309685714
+        -298.84640226277423,
+        4.367010694858417
       ]
     },
     "frontendVersion": "1.36.14",

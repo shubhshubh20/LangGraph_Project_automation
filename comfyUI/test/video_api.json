@@ -1,22 +1,4 @@
 {
-  "4": {
-    "inputs": {
-      "image": "Aditya01.png"
-    },
-    "class_type": "LoadImage",
-    "_meta": {
-      "title": "Load Image"
-    }
-  },
-  "6": {
-    "inputs": {
-      "image": "Aditya01.png"
-    },
-    "class_type": "LoadImage",
-    "_meta": {
-      "title": "Load Image"
-    }
-  },
   "7": {
     "inputs": {
       "frame_rate": 8,
@@ -44,17 +26,49 @@
       "inputcount": 2,
       "Update inputs": null,
       "image_1": [
-        "4",
+        "10",
         0
       ],
       "image_2": [
-        "6",
+        "11",
         0
       ]
     },
     "class_type": "ImageBatchMulti",
     "_meta": {
       "title": "Image Batch Multi"
+    }
+  },
+  "10": {
+    "inputs": {
+      "video": "image_2_to_image_3.mp4",
+      "force_rate": 0,
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "format": "AnimateDiff"
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "Load Video (Upload) 🎥🅥🅗🅢"
+    }
+  },
+  "11": {
+    "inputs": {
+      "video": "image_2_to_image_3.mp4",
+      "force_rate": 0,
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "format": "AnimateDiff"
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "Load Video (Upload) 🎥🅥🅗🅢"
     }
   }
 }

@@ -27,7 +27,7 @@ def create_final_video_job(server_name: str,
     workflow_test["7"]["inputs"]["filename_prefix"] = f'{character}'
     # Remove old LoadImage nodes (optional clean)
     for key in list(workflow_test.keys()):
-        if workflow_test[key]["class_type"] == "LoadImage":
+        if workflow_test[key]["class_type"] == "VHS_LoadVideo":
             del workflow_test[key]
 
     for transition_key, transition_data in transition_state_list.items():
@@ -35,9 +35,18 @@ def create_final_video_job(server_name: str,
         node_id = str(base_id + count)
 
         workflow_test[node_id] = {
-            "inputs": {"image": transition_data["output_path"]},
-            "class_type": "LoadImage",
-            "_meta": {"title": "Load Image"}
+            "inputs": {
+                "video": transition_data["output_path"],
+                "force_rate": 0,
+                "custom_width": 0,
+                "custom_height": 0,
+                "frame_load_cap": 0,
+                "skip_first_frames": 0,
+                "select_every_nth": 1,
+                "format": "AnimateDiff"
+                },
+            "class_type": "VHS_LoadVideo",
+            "_meta": {"title": "Load Video (Upload) 🎥🅥🅗🅢"}
         }
 
         workflow_test["9"]["inputs"][f"image_{count+1}"] = [node_id, 0]

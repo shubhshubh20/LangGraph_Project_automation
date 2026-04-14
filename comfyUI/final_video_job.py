@@ -3,9 +3,9 @@ import os
 from pathlib import Path
 import time
 import requests
-from demo_logger.json_logger import log_event
-from core.state import TransitionState
-
+# from demo_logger.json_logger import log_event
+# from core.state import TransitionState
+from state import TransitionState
 
 def safe_replace(src, dst, retries=5):
     for i in range(retries):
@@ -39,7 +39,7 @@ def create_final_video_job(server_name: str,
     count = 0
     base_id = 100  # safer than 8 (avoid conflicts)
 
-    workflow_test["9"]["inputs"] = {"inputcount": len(transition_state_list)}
+    workflow_test["9"]["inputs"]["inputcount"] = len(transition_state_list)
     workflow_test["7"]["inputs"]["filename_prefix"] = f'{character}'
     # Remove old LoadImage nodes (optional clean)
     for key in list(workflow_test.keys()):
@@ -77,11 +77,11 @@ def create_final_video_job(server_name: str,
 
 
     print("final workflow for video creation:")
-    print({"prompt": workflow_test})
+    # print({"prompt": workflow_test})
     res = requests.post(url, json={"prompt": workflow_test}).json()
     print(res)
     job_id = res["prompt_id"]
 
-    log_event(f"Creating final complete video for {character} with comfy ui")
+    # log_event(f"Creating final complete video for {character} with comfy ui")
 
     return job_id

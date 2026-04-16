@@ -1,0 +1,276 @@
+{
+  "213": {
+    "inputs": {
+      "image": "Naina_outfit_2.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "character_ref_image"
+    }
+  },
+  "360": {
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "362": {
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "368": {
+    "inputs": {
+      "filename_prefix": "Naina",
+      "images": [
+        "369",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "369": {
+    "inputs": {
+      "samples": [
+        "376",
+        0
+      ],
+      "vae": [
+        "360",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "370": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "374": {
+    "inputs": {
+      "image": [
+        "213",
+        0
+      ]
+    },
+    "class_type": "FluxKontextImageScale",
+    "_meta": {
+      "title": "FluxKontextImageScale"
+    }
+  },
+  "376": {
+    "inputs": {
+      "seed": 282789325415594,
+      "steps": 4,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 0.84,
+      "model": [
+        "547",
+        0
+      ],
+      "positive": [
+        "1351",
+        0
+      ],
+      "negative": [
+        "1352",
+        0
+      ],
+      "latent_image": [
+        "370",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "515": {
+    "inputs": {
+      "string": "Create an image of this exact character in this style. ",
+      "strip_newlines": true
+    },
+    "class_type": "StringConstantMultiline",
+    "_meta": {
+      "title": "PROMPT (One Sentence: Describe style, character, clothes...)"
+    }
+  },
+  "546": {
+    "inputs": {
+      "gguf_name": "gguf/qwen-image-edit-2511-Q5_1.gguf"
+    },
+    "class_type": "LoaderGGUF",
+    "_meta": {
+      "title": "GGUF Loader"
+    }
+  },
+  "547": {
+    "inputs": {
+      "lora_name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+      "strength_model": 1,
+      "model": [
+        "1114",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "LoraLoaderModelOnly"
+    }
+  },
+  "592": {
+    "inputs": {
+      "string": "Keep the body proportions and facial features exactly the same.\nstraight view, sitting on normal red plastic stool, leaning slightly forward with feet planted flat, tilting head slightly to listen, holding the steaming cutting chai glass with both hands and a slightly empathetic, observant expression while looking left. The background is a flat, solid chroma key green screen (#00FF00).",
+      "strip_newlines": true
+    },
+    "class_type": "StringConstantMultiline",
+    "_meta": {
+      "title": "String Constant Multiline"
+    }
+  },
+  "593": {
+    "inputs": {
+      "inputcount": 2,
+      "delimiter": " ",
+      "return_list": false,
+      "Update inputs": null,
+      "string_1": [
+        "592",
+        0
+      ],
+      "string_2": [
+        "515",
+        0
+      ]
+    },
+    "class_type": "JoinStringMulti",
+    "_meta": {
+      "title": "Join String Multi"
+    }
+  },
+  "1114": {
+    "inputs": {
+      "strength": 1,
+      "model": [
+        "1115",
+        0
+      ]
+    },
+    "class_type": "CFGNorm",
+    "_meta": {
+      "title": "CFGNorm"
+    }
+  },
+  "1115": {
+    "inputs": {
+      "shift": 3,
+      "model": [
+        "546",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingAuraFlow",
+    "_meta": {
+      "title": "ModelSamplingAuraFlow"
+    }
+  },
+  "1201": {
+    "inputs": {
+      "prompt": [
+        "593",
+        0
+      ],
+      "clip": [
+        "362",
+        0
+      ],
+      "vae": [
+        "360",
+        0
+      ],
+      "image1": [
+        "374",
+        0
+      ],
+      "image2": [
+        "1450",
+        0
+      ]
+    },
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "_meta": {
+      "title": "TextEncodeQwenImageEditPlus"
+    }
+  },
+  "1351": {
+    "inputs": {
+      "reference_latents_method": "index_timestep_zero",
+      "conditioning": [
+        "1201",
+        0
+      ]
+    },
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "_meta": {
+      "title": "Edit Model Reference Method"
+    }
+  },
+  "1352": {
+    "inputs": {
+      "conditioning": [
+        "1201",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "1446": {
+    "inputs": {
+      "image": "chai_glass.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "chai_glass_ref_image"
+    }
+  },
+  "1450": {
+    "inputs": {
+      "image": [
+        "1446",
+        0
+      ]
+    },
+    "class_type": "FluxKontextImageScale",
+    "_meta": {
+      "title": "FluxKontextImageScale"
+    }
+  }
+}

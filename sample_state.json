@@ -1,0 +1,145 @@
+{
+    "id": "s01e08",
+    "characters": {
+        "character_1": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a happy expression",
+                    "expression": "happy",
+                    "pose_prompt": "a standing pose",
+                    "pose": "standing",
+                    "from_time": 0.0,
+                    "to_time": 2.0,
+                    "status": "inprogress",
+                    "prompt_id": "prompt_1",
+                    "output_path": "/path/to/image_1.png"
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a sad expression",
+                    "expression": "sad",
+                    "pose_prompt": "a sitting pose",
+                    "pose": "sitting",
+                    "from_time": 2.0,
+                    "to_time": 4.0,
+                    "status": "inprogress",
+                    "prompt_id": "prompt_2",
+                    "output_path": "/path/to/image_2.png"
+                }
+            },
+            "transitions": {
+                "transition_1": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "status": "inprogress",
+                    "prompt_id": "prompt_3",
+                    "output_path": "/path/to/transition_1.mp4"
+                }
+            },
+            "final_video": {
+                "status": "inprogress",
+                "output_path": "/path/to/final_video_1.mp4"
+            }
+        },
+        "character_2": {
+            "images": {
+                "image_1": {
+                    "index": 0,
+                    "expression_prompt": "a sad expression",
+                    "expression": "sad",
+                    "pose_prompt": "a sitting pose",
+                    "pose": "sitting",
+                    "from_time": 0.0,
+                    "to_time": 2.0,
+                    "status": "inprogress",
+                    "prompt_id": "prompt_2",
+                    "output_path": "/path/to/image_2.png"
+                },
+                "image_2": {
+                    "index": 1,
+                    "expression_prompt": "a happy expression",
+                    "expression": "happy",
+                    "pose_prompt": "a standing pose",
+                    "pose": "standing",
+                    "from_time": 2.0,
+                    "to_time": 4.0,
+                    "status": "inprogress",
+                    "prompt_id": "prompt_1",
+                    "output_path": "/path/to/image_1.png"
+                }
+            },
+            "transitions": {
+                "transition_1": {
+                    "from_image": "image_1",
+                    "to_image": "image_2",
+                    "status": "inprogress",
+                    "prompt_id": "prompt_3",
+                    "output_path": "/path/to/transition_1.mp4"
+                }
+            },
+            "final_video": {
+                "status": "inprogress",
+                "output_path": "/path/to/final_video_2.mp4"
+            }
+        }
+    },
+    "jobs": {
+        "prompt_1": {
+            "type": "image",
+            "character": "character_1",
+            "image_id": "image_1",
+            "transition_id": "None",
+            "status": "inprogress"
+        },
+        "prompt_2": {
+            "type": "image",
+            "character": "character_1",
+            "image_id": "image_2",
+            "transition_id": "None",
+            "status": "inprogress"
+        },
+        "prompt_3": {
+            "type": "transition",
+            "character": "character_1",
+            "image_id": "None",
+            "transition_id": "transition_1",
+            "status": "inprogress"
+        },
+        "prompt_4": {
+            "type": "final_video",
+            "character": "character_1",
+            "image_id": "None",
+            "transition_id": "None",
+            "status": "inprogress"
+        },
+        "prompt_5": {
+            "type": "image",
+            "character": "character_2",
+            "image_id": "image_1",
+            "transition_id": "None",
+            "status": "inprogress"
+        },
+        "prompt_6": {
+            "type": "image",
+            "character": "character_2",
+            "image_id": "image_2",
+            "transition_id": "None",
+            "status": "inprogress"
+        },
+        "prompt_7": {
+            "type": "transition",
+            "character": "character_2",
+            "image_id": "None",
+            "transition_id": "transition_1",
+            "status": "inprogress"
+        },
+        "prompt_8": {
+            "type": "final_video",
+            "character": "character_2",
+            "image_id": "None",
+            "transition_id": "None",
+            "status": "inprogress"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+/comfyUI/staging_loc/s01*
+*_final_state.json
+*_system.log
+*.egg-info
+
+# Virtual environments
+.venv

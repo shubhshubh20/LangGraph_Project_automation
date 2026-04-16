@@ -1,0 +1,44 @@
+images
+
+mkdir unet/gguf
+cd unet/gguf
+wget https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q5_1.gguf
+
+cd ../..
+
+mkdir lora/qwen
+cd lora/qwen
+wget https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning/resolve/main/Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors
+
+cd ../..
+mkdir /clip/qwen
+wget https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
+
+cd ../..
+
+mkdir vae/qwen
+cd vae/qwen
+wget https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
+
+
+transitions
+
+cd ../..
+cd diffusion_models
+wget https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/3560295cfee60b50fa030ee4eba432dd0faa8db1/split_files/diffusion_models/wan2.1_fun_inp_1.3B_bf16.safetensors
+
+cd ..
+cd vae
+wget https://huggingface.co/Osrivers/wan_2.1_vae.safetensors/resolve/main/wan_2.1_vae.safetensors
+
+cd ..
+mkdir ipadapter
+wget https://huggingface.co/h94/IP-Adapter-FaceID/blob/main/ip-adapter-faceid-plusv2_sd15.bin
+
+cd ..
+cd clip_vision
+wget https://huggingface.co/denisbalon/clip-vision-h.safetensors/resolve/main/clip_vision_h.safetensors
+
+cd ..
+cd clip
+wget https://huggingface.co/wanabmeya/umt5_xxl_fp8_e4m3fn_scaled/resolve/main/umt5_xxl_fp8_e4m3fn_scaled.safetensors

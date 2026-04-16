@@ -21,7 +21,7 @@ from telegram.ext import (
 from demo_logger.json_logger import log_event
 
 # 🔑 TOKEN
-TOKEN = "8281846401:AAEUeXL3PiTVZcLMtY7jZ-gyNXqf-0wowBY"
+TOKEN = ""
 
 # ✅ Global queues
 request_queue = deque()   # <-- THIS is your Telegram request queue
@@ -29,7 +29,7 @@ active_request = None
 
 
 # 📌 Store chat_id after /start
-CHAT_ID = 6607871483
+CHAT_ID = ""
 
 # print("initialized state, starting Telegram bot...")
 

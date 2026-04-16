@@ -8,7 +8,8 @@ from demo_logger.json_logger import log_event
 import requests
 from graph.flow import safe_replace
 
-comfyui_output_path = Path("D:\\Comfy_UI\\ComfyUI_windows_portable_nvidia\\ComfyUI_windows_portable\\ComfyUI\\output")
+base_dir = Path(__file__).parent.parent.parent
+comfyui_output_path = 
 
 def check_job_status(server_name: str, key: str, name: str, output_path: str,
                      isImage=False, isTransition=False):

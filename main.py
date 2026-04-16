@@ -9,7 +9,9 @@ from demo_logger.json_logger import log_event, shutdown_logger
 from pathlib import Path
 
 server_name = "http://localhost:8188"
-staging_location = Path("D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc")
+base_dir = Path(__file__).parent
+# staging_location = Path("D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc")
+staging_location = base_dir / "comfyUI" / "staging_loc"
 
 if __name__ == "__main__":
 

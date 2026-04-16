@@ -1,7 +1,7 @@
 {
   "213": {
     "inputs": {
-      "image": "37d98b04-5365-4648-8cea-0b3bff3197b8.png"
+      "image": "Tara_outfit_2.png"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -30,7 +30,7 @@
   },
   "368": {
     "inputs": {
-      "filename_prefix": "ComfyUI",
+      "filename_prefix": "Tara",
       "images": [
         "369",
         0
@@ -82,7 +82,7 @@
   },
   "376": {
     "inputs": {
-      "seed": 1034973049061633,
+      "seed": 963232000497573,
       "steps": 4,
       "cfg": 1,
       "sampler_name": "euler",
@@ -145,7 +145,7 @@
   },
   "592": {
     "inputs": {
-      "string": "A full-body anime illustration of the woman from the reference image, sitting casually on a wooden stool. She holds a steaming cutting chai tapri glass from the reference image in one hand. She is pointing with her other hand.\nShe has a happy, attentive expression and a slight smile, as if listening intently. The background is a flat, solid green screen (hex code #00FF00). standard, eye-level camera angle to capture her from head to toe.",
+      "string": "left 3/4 shot of the character, standing, shifting weight evenly on both feet, looking forward, holding the cutting chai with both hands near her stomach and a serious, attentive listening expression while looking left. Keep the body proportions and facial features exactly the same. The background is a flat, solid chroma key green screen (#00FF00).",
       "strip_newlines": true
     },
     "class_type": "StringConstantMultiline",
@@ -254,7 +254,7 @@
   },
   "1446": {
     "inputs": {
-      "image": "download.jpg"
+      "image": "chai_glass.png"
     },
     "class_type": "LoadImage",
     "_meta": {

@@ -2,7 +2,7 @@
   "3": {
     "inputs": {
       "seed": 248031981577632,
-      "steps": 33,
+      "steps": 56,
       "cfg": 3.5,
       "sampler_name": "uni_pc",
       "scheduler": "simple",
@@ -31,7 +31,7 @@
   },
   "6": {
     "inputs": {
-      "text": "same girl, consistent character, subtle natural head movement as if talking, slight head tilt, small facial expression changes, stable hands, cinematic stillness, smooth controlled motion",
+      "text": "same woman, consistent character, sitting, tilting head slightly to listen, maintaining grip on the glass tea cup with both hands in her lap, stable hands, cinematic stillness, smooth controlled motion",
       "clip": [
         "38",
         0
@@ -73,7 +73,7 @@
   },
   "28": {
     "inputs": {
-      "filename_prefix": "ComfyUI",
+      "filename_prefix": "Naina",
       "fps": 16,
       "lossless": false,
       "quality": 90,
@@ -146,7 +146,7 @@
   },
   "52": {
     "inputs": {
-      "image": "4bf3960dee793bc2e2698f3a40fd82af975f59d62056a9444202a67dcc33d860.png"
+      "image": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_4.png"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -185,7 +185,7 @@
   },
   "67": {
     "inputs": {
-      "shift": 5.000000000000001,
+      "shift": 5,
       "model": [
         "65",
         0
@@ -214,7 +214,7 @@
   },
   "72": {
     "inputs": {
-      "image": "a6aaa6d36792ffcb13f072823f60d4e2a158cd491178e201852c880be097537e.png"
+      "image": "D:\\youtube\\corner_table\\LangGraph_Project_automation\\comfyUI\\staging_loc\\s01_e09\\Naina\\image_5.png"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -303,7 +303,8 @@
   },
   "80": {
     "inputs": {
-      "provider": "CPU"
+      "provider": "CUDA",
+      "model_name": "buffalo_l"
     },
     "class_type": "IPAdapterInsightFaceLoader",
     "_meta": {

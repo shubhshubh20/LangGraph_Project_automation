@@ -47,15 +47,16 @@ def create_transition_video_job(server_name: str,
     workflow["52"]["inputs"]["image"] = start_image_state["output_path"]
     workflow["72"]["inputs"]["image"] = end_image_state["output_path"]
     workflow["28"]["inputs"]["filename_prefix"] = character
-    workflow["6"]["inputs"]["string"] = transition_state["prompt"]
+    workflow["6"]["inputs"]["text"] = transition_state["prompt"]
     #get nearby integer to total_time * 16
     workflow["3"]["inputs"]["steps"] = round(total_time * 16)
 
     log_event("Persisting state to state.json")
-    with open(staging_location / "test_workflow_api" / f'{character}_{transition_key}.tmp', 'w') as f:
+    staging_location = staging_location / "test_workflow_api" / character / "transition"
+    with open(staging_location / f'{character}_{transition_key}.tmp', 'w') as f:
         json.dump(workflow, f, indent=4)
 
-    safe_replace(staging_location / "test_workflow_api" / f'{character}_{transition_key}.tmp', staging_location / "test_workflow_api" / f'{character}_{transition_key}.json')
+    safe_replace(staging_location / f'{character}_{transition_key}.tmp', staging_location / f'{character}_{transition_key}.json')
 
 
     res = requests.post(url, json={"prompt": workflow_test}).json()

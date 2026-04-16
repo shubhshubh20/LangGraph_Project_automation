@@ -3,6 +3,7 @@ from collections import deque
 import time
 from core.state import JobState
 from graph.flow import event_queue
+from PIL import Image
 from telegram import (
     Update,
     InlineKeyboardButton,
@@ -30,10 +31,21 @@ active_request = None
 # 📌 Store chat_id after /start
 CHAT_ID = 6607871483
 
+# print("initialized state, starting Telegram bot...")
+
+app = (
+    Application.builder()
+    .token(TOKEN)
+    .read_timeout(30)
+    .write_timeout(30)
+    .connect_timeout(30)
+    .build()
+)
+
 
 # ✅ Background worker (VERY IMPORTANT)
-async def telegram_worker(app):
-    global CHAT_ID, active_request
+async def telegram_worker():
+    global CHAT_ID, active_request, app
 
     while True:
         await asyncio.sleep(1)
@@ -48,7 +60,7 @@ async def telegram_worker(app):
         if request_queue:
             job = request_queue.popleft()
             active_request = job
-            await send_to_telegram(job=job, app=app)
+            await send_to_telegram(job=job)
             # keyboard = [[
             #     InlineKeyboardButton("✅ Approve", callback_data=f"approve_{job['job_id']}"),
             #     InlineKeyboardButton("❌ Reject", callback_data=f"reject_{job['job_id']}")
@@ -62,11 +74,15 @@ async def telegram_worker(app):
             #     reply_markup=reply_markup
             # )
 
-async def send_to_telegram(job, app):
+async def send_to_telegram(job):
 
+    print("inside send_to_telegram")
+
+    global app
     
     keyboard = [[
         InlineKeyboardButton("✅ Approve", callback_data=f"approve_{job['job_id']}"),
+        InlineKeyboardButton("✅ Mirror & Approve", callback_data=f"mirrorApprove_{job['job_id']}"),
         InlineKeyboardButton("❌ Reject", callback_data=f"reject_{job['job_id']}")
     ]]
 
@@ -104,6 +120,9 @@ async def send_to_telegram(job, app):
     #     reply_markup=reply_markup
     # )
 
+
+
+
 # ✅ Handle approve/reject
 async def handle_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     global active_request
@@ -114,7 +133,6 @@ async def handle_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
     if action == "approve":
-        response = f"✅ Job {job_id} approved"
         event_queue.put({
             "type": "TELEGRAM_APPROVE_EVENT",
             "payload": {
@@ -122,20 +140,33 @@ async def handle_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             }
         })
         log_event(f"[EVENT] Job {job_id} APPROVED")
-    else:        
-        response = f"❌ Job {job_id} rejected"
+    elif action == "reject":        
+        # event_queue.put({
+        #     "type": "TELEGRAM_REJECT_EVENT",
+        #     "payload": {
+        #         "job_id": job_id
+        #     }
+        # })
+        await send_reject_options_to_telegram(job=active_request)
+        log_event(f"[EVENT] Job {job_id} REJECTED")
+    elif action == "mirrorApprove":
+        img = Image.open(active_request["output_path"])
+        img = img.transpose(Image.FLIP_LEFT_RIGHT)
+        img.save(active_request["output_path"])
         event_queue.put({
-            "type": "TELEGRAM_REJECT_EVENT",
+            "type": "TELEGRAM_APPROVE_EVENT",
             "payload": {
                 "job_id": job_id
             }
         })
-        log_event(f"[EVENT] Job {job_id} REJECTED")
-
+        log_event(f"[EVENT] Job {job_id} MIRRORED & APPROVED")
+    elif action == "updatePrompt":
+        await send_update_prompt_options_to_telegram(job=active_request)
+    # el
     # 🧹 remove message
     try:
-        await query.message.delete()
         active_request = None
+        await query.message.delete()
         # await query.message.reply_text(response)
     except:
         pass
@@ -148,18 +179,21 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 
 # 🚀 THIS is what YOU will call from anywhere
-def send_approval_request(job_id: str, name: str, output_path: str, isImage=False):
+def send_approval_request(job_id: str, name: str, output_path: str, isImage=False, isTransition=False):
     request_queue.append({
         "job_id": job_id,
         "name": name,
         "output_path": output_path,
-        "isImage": isImage
+        "isImage": isImage,
+        "isTransition": isTransition
     })
 
 
 
 # 🚀 Main
 def main(episode_number:str, server_name:str, staging_location:str):
+
+    global app
 
     event_queue.put({
         "type": "INITIALIZE",
@@ -170,23 +204,14 @@ def main(episode_number:str, server_name:str, staging_location:str):
         }
     })
 
-    # print("initialized state, starting Telegram bot...")
-
-    app = (
-        Application.builder()
-        .token(TOKEN)
-        .read_timeout(30)
-        .write_timeout(30)
-        .connect_timeout(30)
-        .build()
-    )
+    
 
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.add_handler(CallbackQueryHandler(handle_button))
 
     # 🔥 Start background worker
     async def post_init(app):
-        asyncio.get_running_loop().create_task(telegram_worker(app))
+        asyncio.get_running_loop().create_task(telegram_worker())
 
     app.post_init = post_init
     # app.post_init = lambda app: asyncio.create_task(telegram_worker(app))

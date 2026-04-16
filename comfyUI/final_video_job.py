@@ -3,9 +3,8 @@ import os
 from pathlib import Path
 import time
 import requests
-# from demo_logger.json_logger import log_event
-# from core.state import TransitionState
-from state import TransitionState
+from demo_logger.json_logger import log_event
+from core.state import TransitionState
 
 def safe_replace(src, dst, retries=5):
     for i in range(retries):
@@ -70,10 +69,10 @@ def create_final_video_job(server_name: str,
 
     # total_vidoes = len(transition_state_list)
 
-    with open(staging_location / "test_workflow_api" / f'{character}_final.tmp', 'w') as f:
+    with open(staging_location / "test_workflow_api" / character / f'{character}_final.tmp', 'w') as f:
         json.dump(workflow_test, f, indent=4)
 
-    safe_replace(staging_location / "test_workflow_api" / f'{character}_final.tmp', staging_location / "test_workflow_api" / f'{character}_final.json')
+    safe_replace(staging_location / "test_workflow_api" / character / f'{character}_final.tmp', staging_location / "test_workflow_api" / character / f'{character}_final.json')
 
 
     print("final workflow for video creation:")

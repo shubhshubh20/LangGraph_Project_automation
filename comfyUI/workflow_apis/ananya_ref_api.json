@@ -1,7 +1,7 @@
 {
   "213": {
     "inputs": {
-      "image": "37d98b04-5365-4648-8cea-0b3bff3197b8.png"
+      "image": "Ananya_outfit_2.png"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -30,7 +30,7 @@
   },
   "368": {
     "inputs": {
-      "filename_prefix": "ComfyUI",
+      "filename_prefix": "Ananya",
       "images": [
         "369",
         0
@@ -112,7 +112,7 @@
   },
   "515": {
     "inputs": {
-      "string": "Create an image of this exact character in this style. ",
+      "string": "Create an image of this exact character in this style. \n",
       "strip_newlines": true
     },
     "class_type": "StringConstantMultiline",
@@ -145,7 +145,7 @@
   },
   "592": {
     "inputs": {
-      "string": "A full-body anime illustration of the woman from the reference image, sitting casually on a wooden stool. She holds a steaming cutting chai tapri glass from the reference image in one hand. She is pointing with her other hand.\nShe has a happy, attentive expression and a slight smile, as if listening intently. The background is a flat, solid green screen (hex code #00FF00). standard, eye-level camera angle to capture her from head to toe.",
+      "string": "Maintain identical body proportions from reference image, especially leg length and hip-to-knee distance, preserve original limb ratios exactly. right 3/4 full body view, sitting on normal red plastic stool, shifting weight slightly on the seat, tilting head slightly, lowering the glass tea cup and holding it with both hands on her lap and an empathetic, slightly concerned listening expression. The background is a flat, solid chroma key green screen (#00FF00). Do not shorten the legs",
       "strip_newlines": true
     },
     "class_type": "StringConstantMultiline",
@@ -254,7 +254,7 @@
   },
   "1446": {
     "inputs": {
-      "image": "download.jpg"
+      "image": "chai_glass.png"
     },
     "class_type": "LoadImage",
     "_meta": {

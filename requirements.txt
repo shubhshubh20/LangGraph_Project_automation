@@ -1,0 +1,5 @@
+langgraph>=1.1.6
+notebook>=7.5.5
+python-dotenv>=1.2.2
+python-telegram-bot>=22.7
+Pillow>=10.0.0

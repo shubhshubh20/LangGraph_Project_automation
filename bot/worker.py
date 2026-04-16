@@ -11,7 +11,7 @@ from graph.flow import safe_replace
 comfyui_output_path = Path("D:\\Comfy_UI\\ComfyUI_windows_portable_nvidia\\ComfyUI_windows_portable\\ComfyUI\\output")
 
 def check_job_status(server_name: str, key: str, name: str, output_path: str,
-                     isImage=False):
+                     isImage=False, isTransition=False):
     #randomly update the job status to completed, in_progress or failed for testing
 
 
@@ -28,26 +28,48 @@ def check_job_status(server_name: str, key: str, name: str, output_path: str,
         if status in ["success"]:
             if isImage:
                 saved_image_file_name = res[key]["outputs"]["10"]["images"][0]["filename"]
+                # saved_image_file_name = res[key]["outputs"]["368"]["images"][0]["filename"]
+            elif isTransition:
+                saved_image_file_name = res[key]["outputs"]["7"]["gifs"][0]["filename"]
+                # saved_image_file_name = res[key]["outputs"]["28"]["gifs"][0]["filename"]
             else:
                 saved_image_file_name = res[key]["outputs"]["7"]["gifs"][0]["filename"]
+
             safe_replace((comfyui_output_path / saved_image_file_name).__str__(), output_path)
+            
             # event_queue.put({
-            #     "type": "JOB_TELEGRAM_REQUEST_EVENT", 
+            #     "type": "TELEGRAM_APPROVE_EVENT",
             #     "payload": {
             #         "job_id": key
             #     }
             # })
-            event_queue.put({
-                "type": "TELEGRAM_APPROVE_EVENT",
-                "payload": {
-                    "job_id": key
-                }
-            })
-            # if isImage:
-            #     send_approval_request(key, name, output_path, isImage=True)
-            # else:
-            #     send_approval_request(key, name, output_path)
-            # log_event(f"telegram request sent")
+            if isImage:
+                send_approval_request(key, name, output_path, isImage=True)
+                event_queue.put({
+                    "type": "JOB_TELEGRAM_REQUEST_EVENT", 
+                    "payload": {
+                        "job_id": key
+                    }
+                })
+                log_event(f"telegram request sent")
+            elif isTransition:
+                send_approval_request(key, name, output_path, isTransition=True)
+                event_queue.put({
+                    "type": "JOB_TELEGRAM_REQUEST_EVENT", 
+                    "payload": {
+                        "job_id": key
+                    }
+                })
+                log_event(f"telegram request sent")
+            else:
+                event_queue.put({
+                    "type": "TELEGRAM_APPROVE_EVENT",
+                    "payload": {
+                        "job_id": key
+                    }
+                })
+                log_event(f"final video created")
+            
         elif status in ["error"]:
             event_queue.put({
                 "type": "JOB_FAILED_EVENT", 
@@ -135,7 +157,7 @@ def poll_job_status(server_name, shutdown_event):
                     check_job_status(server_name, key, 
                                      f'Transition video from {from_image_data["expression"]} and pose {from_image_data["pose"]} to \
                                      {to_image_data["expression"]} and pose {to_image_data["pose"]} for character {character_name}',
-                                     job["output_path"])
+                                     job["output_path"], isTransition=True)
                 elif job["type"] == "final_video":
                     check_job_status(server_name, key, f'Final video for character {character_name}', job["output_path"])
 

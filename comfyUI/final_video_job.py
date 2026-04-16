@@ -27,13 +27,13 @@ def create_final_video_job(server_name: str,
     #     workflow = json.load(f)
 
     base_dir = Path(__file__).parent
-    file_path = base_dir / "test" / "video_api.json"
+    # file_path = base_dir / "test" / "video_api.json"
 
-    with open(file_path, "r") as f:
-        workflow_test = json.load(f)
+    # with open(file_path, "r") as f:
+    #     workflow_test = json.load(f)
 
     with open(base_dir / "workflow_apis" / "video_combine_api.json", "r") as f:
-        workflow = json.load(f)
+        workflow_test = json.load(f)
 
     count = 0
     base_id = 100  # safer than 8 (avoid conflicts)

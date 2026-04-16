@@ -42,18 +42,18 @@ def create_image_job(server_name:str, staging_location: Path, character: str, im
     #     workflow = json.load(f)
     
     base_dir = Path(__file__).parent
-    file_path = base_dir / "test" / "image_api.json"
+    # file_path = base_dir / "test" / "image_api.json"
     # print(file_path.__str__())
-    with open(file_path, "r") as f:
-        test_workflow = json.load(f)
+    # with open(file_path, "r") as f:
+    #     test_workflow = json.load(f)
 
     with open(base_dir / "workflow_apis" / "character_creator_api.json", "r") as f:
         workflow = json.load(f)
     
     # print(test_workflow)
 
-    test_workflow["4"]["inputs"]["image"] = f'{image_state["output_path"]}'
-    test_workflow["10"]["inputs"]["filename_prefix"] = f'{character}'
+    # test_workflow["4"]["inputs"]["image"] = f'{image_state["output_path"]}'
+    # test_workflow["10"]["inputs"]["filename_prefix"] = f'{character}'
 
     workflow["213"]["inputs"]["image"] = character_ref_image_path.__str__()
     # workflow["515"]["inputs"]["string"] = char_def_prompt
@@ -68,7 +68,7 @@ def create_image_job(server_name:str, staging_location: Path, character: str, im
 
     safe_replace(staging_location / f'{character}_{img_key}.tmp', staging_location / f'{character}_{img_key}.json')
 
-    res = requests.post(url, json={"prompt": test_workflow}).json()
+    res = requests.post(url, json={"prompt": workflow}).json()
     # print(res)
     job_id = res["prompt_id"]
 
